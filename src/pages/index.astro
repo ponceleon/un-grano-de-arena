@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import VisionMision from '../components/VisionMision.astro';
+import ProgramasHome from '../components/ProgramasHome.astro';
+import TeamHome from '../components/TeamHome.astro';
+import Testimonial from '../components/Testimonial.astro';
+import CTADonacion from '../components/CTADonacion.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Inicio"
+  description="Un Grano de Arena es una organización sin fines de lucro que acompaña en su proceso de florecimiento humano a las personas en situación de vulnerabilidad."
+>
+  <Header />
+  
+  <main>
+    <Hero />
+    <VisionMision />
+    <ProgramasHome />
+    <TeamHome />
+    <Testimonial />
+    <CTADonacion />
+  </main>
+
+  <Footer />
+</Layout>

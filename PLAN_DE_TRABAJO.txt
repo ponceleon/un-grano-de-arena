@@ -1,0 +1,186 @@
+===============================================================================
+PLAN DE TRABAJO: MIGRACIÓN DE UN GRANO DE ARENA A ASTRO.JS
+===============================================================================
+
+Sitio actual: https://ungrano.org/
+Tecnología actual: WordPress
+Nueva tecnología: Astro.js
+Objetivo: Diseño renovado y contenido actualizado
+
+===============================================================================
+FASE 1: PLANIFICACIÓN Y ANÁLISIS
+===============================================================================
+
+1.1 Auditoría de Contenido
+---------------------------
+- Inventario completo de páginas y secciones
+- Identificar contenido a actualizar/eliminar
+- Recopilar todas las imágenes y recursos multimedia
+- Exportar contenido del blog actual
+
+1.2 Definición de Estructura
+-----------------------------
+Páginas principales identificadas:
+- Home
+- Nosotros (El Equipo, Aliados)
+- Programas (6 programas diferentes)
+- Recetario
+- Ponte Derecha
+- Informes Anuales
+- Blog
+- Donar
+
+
+===============================================================================
+FASE 2: SETUP TÉCNICO Y DISEÑO
+===============================================================================
+
+2.1 Configuración del Proyecto
+-------------------------------
+- Instalar Tailwind CSS o framework de estilos
+- Configurar componentes reutilizables
+- Setup de íconos (React Icons, etc.)
+- Optimización de imágenes con Astro Image
+
+2.2 Sistema de Diseño
+----------------------
+- Definir paleta de colores renovada
+- Tipografía moderna
+- Componentes base (botones, cards, formularios)
+- Sistema de grid y espaciado
+
+
+===============================================================================
+FASE 3: DESARROLLO DEL CORE
+===============================================================================
+
+3.1 Componentes Globales
+-------------------------
+- Header/Navegación responsive
+- Footer con links y redes sociales
+- Layout base
+- Componente de donación (CTA)
+
+3.2 Página de Inicio
+--------------------
+- Hero section impactante
+- Sección Visión y Misión
+- Showcase del equipo
+- Call-to-action de donación
+- Testimonios
+- Sección de últimas noticias/actividades
+
+3.3 Páginas Institucionales
+----------------------------
+- Nosotros
+- El Equipo (con fotos y biografías)
+- Aliados (logos y descripciones)
+
+
+===============================================================================
+FASE 4: PROGRAMAS Y CONTENIDO ESPECIAL
+===============================================================================
+
+4.1 Sección de Programas
+-------------------------
+- Landing page de programas
+- Páginas individuales para cada programa:
+  * Granos sobre Ruedas
+  * Devolviendo Sonrisas
+  * Celebrando la vida
+  * Granos de Sabor
+  * Un Grano Tampa
+  * Actividades
+
+4.2 Contenido Especial
+-----------------------
+- Recetario (posiblemente con filtros)
+- Ponte Derecha
+- Informes Anuales (con PDFs descargables)
+
+
+===============================================================================
+FASE 5: PÁGINA DE DONACIONES
+===============================================================================
+
+5.1 Integración de Donaciones
+------------------------------
+- Formulario de donación
+- Integración con PayPal
+- Información de Venmo
+- Datos bancarios
+- Amazon Wish Lists
+- Múltiples programas de donación
+
+
+===============================================================================
+FASE 6: OPTIMIZACIÓN Y SEO
+===============================================================================
+
+6.1 Performance
+---------------
+- Optimización de imágenes
+- Lazy loading
+- Code splitting
+- Minificación
+
+6.2 SEO
+-------
+- Meta tags
+- Open Graph
+- Sitemap
+- robots.txt
+- Structured data
+
+
+===============================================================================
+FASE 7: TESTING Y DEPLOY
+===============================================================================
+
+7.1 Testing
+-----------
+- Pruebas en diferentes navegadores
+- Responsive testing (móvil, tablet, desktop)
+- Validación de formularios
+- Links y navegación
+
+7.2 Deployment
+--------------
+- Configurar hosting (Netlify/Vercel recomendado)
+- Setup de dominio
+- SSL
+- Analytics
+
+
+===============================================================================
+TECNOLOGÍAS RECOMENDADAS
+===============================================================================
+
+Frontend: Astro.js 5.x
+Estilos: Tailwind CSS
+Íconos: Lucide React o React Icons
+Formularios: React Hook Form
+Animaciones: View Transitions API de Astro
+Imágenes: @astrojs/image
+Hosting: Netlify o Vercel
+CMS (opcional): Decap CMS o Tina CMS
+
+
+===============================================================================
+NOTAS ADICIONALES
+===============================================================================
+
+- Agregar cualquier nota o consideración especial aquí
+- 
+
+
+===============================================================================
+MODIFICACIONES Y AJUSTES
+===============================================================================
+
+Fecha: ___________
+Cambios realizados:
+-
+
+
+===============================================================================

@@ -1,0 +1,72 @@
+---
+import Section from './Section.astro';
+import Button from './Button.astro';
+import { Heart, Users, Sparkles } from 'lucide-react';
+---
+
+<Section class="bg-gradient-to-br from-secondary-50 via-white to-primary-50">
+  <div class="max-w-5xl mx-auto">
+    <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
+      <div class="grid md:grid-cols-2">
+        <!-- Image Side -->
+        <div class="relative h-64 md:h-auto">
+          <img 
+            src="/images/donation-cta.jpg" 
+            alt="Ayúdanos a cambiar vidas"
+            class="w-full h-full object-cover"
+          />
+          <div class="absolute inset-0 bg-gradient-to-r from-primary-600/80 to-transparent"></div>
+        </div>
+
+        <!-- Content Side -->
+        <div class="p-8 md:p-12 flex flex-col justify-center">
+          <div class="mb-6">
+            <Heart class="w-12 h-12 text-secondary-600 mb-4" />
+            <h2 class="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-4">
+              Con tu aporte podemos cambiar vidas
+            </h2>
+            <p class="text-gray-600 text-lg mb-6">
+              Cada donación, sin importar el monto, nos ayuda a continuar nuestro trabajo y a llevar esperanza a quienes más lo necesitan.
+            </p>
+          </div>
+
+          <div class="space-y-4 mb-8">
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <Users class="w-4 h-4 text-primary-600" />
+              </div>
+              <div>
+                <p class="font-semibold text-gray-900">Impacto Directo</p>
+                <p class="text-sm text-gray-600">Tu donación llega directamente a las comunidades</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 bg-secondary-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <Sparkles class="w-4 h-4 text-secondary-600" />
+              </div>
+              <div>
+                <p class="font-semibold text-gray-900">Transparencia Total</p>
+                <p class="text-sm text-gray-600">Informes anuales y reportes de cada actividad</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-4">
+            <Button href="/donar" variant="primary" size="lg" class="flex-1">
+              Donar Ahora
+            </Button>
+            <Button href="/programas" variant="outline" size="lg" class="flex-1">
+              Ver Programas
+            </Button>
+          </div>
+
+          <p class="text-sm text-gray-500 mt-6 text-center">
+            💚 Juntos podemos construir la paz positiva
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</Section>
+
+

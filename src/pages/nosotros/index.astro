@@ -1,0 +1,103 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Section from '../../components/Section.astro';
+import Button from '../../components/Button.astro';
+import VisionMision from '../../components/VisionMision.astro';
+---
+
+<Layout 
+  title="Nosotros"
+  description="Conoce más sobre Un Grano de Arena, nuestra visión, misión y el impacto que generamos en las comunidades."
+>
+  <Header />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="relative h-96 flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img 
+          src="/images/nosotros-hero.jpg" 
+          alt="Nosotros" 
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/50"></div>
+      </div>
+      
+      <div class="relative z-10 container-custom text-center text-white">
+        <h1 class="font-heading font-bold mb-4">Sobre Nosotros</h1>
+        <p class="text-xl md:text-2xl max-w-3xl mx-auto">
+          Somos una organización sin fines de lucro comprometida con el cambio social
+        </p>
+      </div>
+    </section>
+
+    <!-- Quiénes Somos -->
+    <Section class="bg-white">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-gray-900 mb-4">¿Quiénes Somos?</h2>
+          <div class="w-20 h-1 bg-primary-600 mx-auto rounded-full mb-6"></div>
+        </div>
+        
+        <div class="prose prose-lg max-w-none">
+          <p class="text-xl text-gray-700 leading-relaxed mb-6">
+            <strong>Un Grano de Arena</strong> es una organización sin fines de lucro que acompaña en su proceso de florecimiento humano a las personas en situación de vulnerabilidad.
+          </p>
+          
+          <p class="text-lg text-gray-600 leading-relaxed mb-6">
+            Creemos firmemente que cada persona tiene un potencial único esperando ser descubierto. A menudo, ese potencial no se descubre por la falta de herramientas o recursos, sino porque no se cree lo suficiente en él. <strong>Nosotros creemos en ti.</strong>
+          </p>
+
+          <p class="text-lg text-gray-600 leading-relaxed mb-8">
+            Nuestro trabajo se enfoca en crear espacios de encuentro, aprendizaje y crecimiento, donde cada persona pueda desarrollar sus capacidades y contribuir al bien común. A través de programas educativos, atención en salud, promoción de la igualdad y alimentación saludable, trabajamos día a día para construir un mundo más justo e inclusivo.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 mt-12">
+          <div class="bg-gradient-to-br from-primary-50 to-white p-8 rounded-2xl shadow-md">
+            <div class="text-4xl mb-4">🌍</div>
+            <h3 class="text-xl font-heading font-bold text-gray-900 mb-3">Guiados por los ODS</h3>
+            <p class="text-gray-600">
+              Nos guiamos por la Agenda 2030 y los 17 Objetivos de Desarrollo Sostenible de las Naciones Unidas.
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-br from-secondary-50 to-white p-8 rounded-2xl shadow-md">
+            <div class="text-4xl mb-4">⚖️</div>
+            <h3 class="text-xl font-heading font-bold text-gray-900 mb-3">Derechos Humanos</h3>
+            <p class="text-gray-600">
+              Nuestro trabajo se fundamenta en la Declaración Universal de los Derechos Humanos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </Section>
+
+    <!-- Visión y Misión -->
+    <VisionMision />
+
+    <!-- CTAs -->
+    <Section class="bg-gray-50">
+      <div class="text-center">
+        <h2 class="text-gray-900 mb-6">Únete a Nuestro Trabajo</h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+          Conoce más sobre nuestro equipo y nuestros aliados estratégicos
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button href="/nosotros/equipo" variant="primary" size="lg">
+            Conoce al Equipo
+          </Button>
+          <Button href="/nosotros/aliados" variant="outline" size="lg">
+            Nuestros Aliados
+          </Button>
+        </div>
+      </div>
+    </Section>
+  </main>
+
+  <Footer />
+</Layout>
+
+

@@ -1,0 +1,93 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Section from '../../components/Section.astro';
+import Button from '../../components/Button.astro';
+import { aliados } from '../../data/aliados';
+---
+
+<Layout 
+  title="Nuestros Aliados"
+  description="Conoce a las organizaciones y personas que nos acompañan en nuestra misión de transformación social."
+>
+  <Header />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="relative h-96 flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img 
+          src="/images/aliados-hero.jpg" 
+          alt="Nuestros Aliados" 
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/50"></div>
+      </div>
+      
+      <div class="relative z-10 container-custom text-center text-white">
+        <h1 class="font-heading font-bold mb-4">Nuestros Aliados</h1>
+        <p class="text-xl md:text-2xl max-w-3xl mx-auto">
+          Juntos somos más fuertes
+        </p>
+      </div>
+    </section>
+
+    <!-- Intro -->
+    <Section class="bg-white">
+      <div class="max-w-4xl mx-auto text-center mb-12">
+        <h2 class="text-gray-900 mb-4">Alianzas Estratégicas</h2>
+        <div class="w-20 h-1 bg-primary-600 mx-auto rounded-full mb-6"></div>
+        <p class="text-lg text-gray-600 leading-relaxed">
+          Nuestro trabajo no sería posible sin el apoyo y colaboración de organizaciones, empresas y personas comprometidas con el cambio social. Juntos multiplicamos el impacto y llegamos a más comunidades.
+        </p>
+      </div>
+
+      <!-- Aliados Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {aliados.map((aliado) => (
+          <div class="group">
+            <div class="bg-white rounded-2xl shadow-md p-8 text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+              <div class="w-32 h-32 mx-auto mb-6 bg-gray-100 rounded-xl flex items-center justify-center overflow-hidden">
+                <img 
+                  src={aliado.logo || '/images/aliados/placeholder.png'} 
+                  alt={aliado.name}
+                  class="max-w-full max-h-full object-contain transition-transform duration-300 group-hover:scale-110"
+                />
+              </div>
+              <h3 class="font-heading font-bold text-lg text-gray-900 mb-2">{aliado.name}</h3>
+              {aliado.description && (
+                <p class="text-gray-600 text-sm">{aliado.description}</p>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+    </Section>
+
+    <!-- Become a Partner CTA -->
+    <Section class="bg-gradient-to-br from-primary-600 to-primary-800 text-white">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-white mb-6">¿Quieres ser nuestro aliado?</h2>
+        <p class="text-xl mb-8 text-primary-100 leading-relaxed">
+          Si tu organización comparte nuestros valores y quiere sumarse a nuestra misión, nos encantaría conocerte y explorar formas de colaboración.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a 
+            href="mailto:info@ungrano.org?subject=Propuesta de Alianza"
+            class="btn bg-white text-primary-600 hover:bg-gray-100"
+          >
+            Contáctanos
+          </a>
+          <Button href="/programas" variant="outline" size="lg" class="border-white text-white hover:bg-white hover:text-primary-600">
+            Conoce Nuestros Programas
+          </Button>
+        </div>
+      </div>
+    </Section>
+  </main>
+
+  <Footer />
+</Layout>
+
+

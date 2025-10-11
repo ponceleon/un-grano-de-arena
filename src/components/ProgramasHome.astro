@@ -1,0 +1,40 @@
+---
+import Section from './Section.astro';
+import Card from './Card.astro';
+import Button from './Button.astro';
+import { programas } from '../data/programas';
+
+// Mostrar solo los primeros 3 programas en el home
+const featuredProgramas = programas.slice(0, 3);
+---
+
+<Section class="bg-white">
+  <div class="text-center mb-12">
+    <h2 class="text-gray-900 mb-4">Nuestros Programas</h2>
+    <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-4">
+      Trabajamos en diversos programas que impactan positivamente la vida de las personas en situación de vulnerabilidad
+    </p>
+    <div class="w-20 h-1 bg-primary-600 mx-auto rounded-full"></div>
+  </div>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+    {featuredProgramas.map((programa) => (
+      <Card image={programa.image} imageAlt={programa.title}>
+        <h3 class="text-2xl font-heading font-bold text-gray-900 mb-2">{programa.title}</h3>
+        <p class="text-sm text-primary-600 font-semibold mb-3">{programa.subtitle}</p>
+        <p class="text-gray-600 mb-4 line-clamp-3">{programa.description}</p>
+        <Button href={`/programas/${programa.slug}`} variant="outline" size="sm">
+          Conocer más
+        </Button>
+      </Card>
+    ))}
+  </div>
+
+  <div class="text-center">
+    <Button href="/programas" variant="primary" size="lg">
+      Ver Todos los Programas
+    </Button>
+  </div>
+</Section>
+
+
