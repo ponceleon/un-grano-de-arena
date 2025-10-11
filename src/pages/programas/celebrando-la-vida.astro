@@ -1,0 +1,128 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Section from '../../components/Section.astro';
+import Button from '../../components/Button.astro';
+---
+
+<Layout 
+  title="Celebrando la Vida"
+  description="Actividades recreativas y momentos especiales para niños y ancianos."
+>
+  <Header />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="relative h-[500px] flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img 
+          src="/images/programas/celebrando.jpg" 
+          alt="Celebrando la Vida" 
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-gradient-to-b from-black/70 to-black/60"></div>
+      </div>
+      
+      <div class="relative z-10 container-custom text-center text-white">
+        <div class="text-5xl mb-4">🎉</div>
+        <h1 class="font-heading font-bold mb-4">Celebrando la Vida</h1>
+        <p class="text-2xl font-semibold text-accent-200 mb-4">¡Un día especial para ti!</p>
+        <p class="text-xl max-w-3xl mx-auto">
+          Porque lo mereces
+        </p>
+      </div>
+    </section>
+
+    <!-- Descripción -->
+    <Section class="bg-white">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-gray-900 mb-6 text-center">Momentos de Alegría y Conexión</h2>
+        <div class="w-20 h-1 bg-accent-600 mx-auto rounded-full mb-8"></div>
+        
+        <div class="prose prose-lg max-w-none">
+          <p class="text-xl text-gray-700 leading-relaxed mb-6">
+            Las actividades recreativas son necesarias para una buena salud física y mental. 
+          </p>
+          
+          <p class="text-lg text-gray-600 leading-relaxed mb-6">
+            <strong>Celebrando la Vida</strong> está diseñado para proporcionar un día divertido para niños y ancianos, proporcionando momentos llenos de música, juegos, comida y mucha diversión.
+          </p>
+
+          <p class="text-lg text-gray-600 leading-relaxed mb-8">
+            Es un día especial dedicado solo a ellos, porque lo merecen. Creemos firmemente que la alegría y la recreación son componentes esenciales del bienestar integral.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 mt-12">
+          <div class="bg-gradient-to-br from-accent-50 to-white p-8 rounded-2xl shadow-lg">
+            <div class="text-4xl mb-4 text-center">👶</div>
+            <h3 class="font-heading font-bold text-xl text-gray-900 mb-4 text-center">Para Niños</h3>
+            <ul class="space-y-3 text-gray-600">
+              <li class="flex items-start gap-3">
+                <span class="text-accent-600 text-xl">•</span>
+                <span>Juegos y actividades recreativas</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-accent-600 text-xl">•</span>
+                <span>Música y baile</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-accent-600 text-xl">•</span>
+                <span>Comida y meriendas</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-accent-600 text-xl">•</span>
+                <span>Regalos y sorpresas</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="bg-gradient-to-br from-primary-50 to-white p-8 rounded-2xl shadow-lg">
+            <div class="text-4xl mb-4 text-center">👴</div>
+            <h3 class="font-heading font-bold text-xl text-gray-900 mb-4 text-center">Para Adultos Mayores</h3>
+            <ul class="space-y-3 text-gray-600">
+              <li class="flex items-start gap-3">
+                <span class="text-primary-600 text-xl">•</span>
+                <span>Actividades sociales y recreativas</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-primary-600 text-xl">•</span>
+                <span>Música y entretenimiento</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-primary-600 text-xl">•</span>
+                <span>Comida especial</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-primary-600 text-xl">•</span>
+                <span>Atención y compañía</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </Section>
+
+    <!-- CTA -->
+    <Section class="bg-gradient-to-br from-accent-600 to-accent-800 text-white">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-white mb-6">Apoya Este Programa</h2>
+        <p class="text-xl text-accent-100 mb-8 max-w-2xl mx-auto">
+          También puedes agregar tu pequeño grano de arena a través de Amazon comprando cualquiera de los artículos de la lista.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button href="/donar" variant="secondary" size="lg">
+            Hacer una Donación
+          </Button>
+          <Button href="/programas" variant="outline" size="lg" class="border-white text-white hover:bg-white hover:text-accent-600">
+            Ver Otros Programas
+          </Button>
+        </div>
+      </div>
+    </Section>
+  </main>
+
+  <Footer />
+</Layout>
+

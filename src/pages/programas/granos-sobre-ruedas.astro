@@ -1,0 +1,100 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Section from '../../components/Section.astro';
+import Button from '../../components/Button.astro';
+---
+
+<Layout 
+  title="Granos sobre Ruedas - Bibliobús Móvil"
+  description="El bibliobús El Principito lleva libros y educación a los rincones más alejados de Venezuela."
+>
+  <Header />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="relative h-[500px] flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img 
+          src="/images/programas/bibliobús.jpg" 
+          alt="Granos sobre Ruedas" 
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-gradient-to-b from-black/70 to-black/60"></div>
+      </div>
+      
+      <div class="relative z-10 container-custom text-center text-white">
+        <div class="text-5xl mb-4">📚</div>
+        <h1 class="font-heading font-bold mb-4">Granos sobre Ruedas</h1>
+        <p class="text-2xl font-semibold text-primary-200 mb-4">Bibliobús Móvil - El Principito</p>
+        <p class="text-xl max-w-3xl mx-auto">
+          Llevando el poder de la lectura a cada rincón de Venezuela
+        </p>
+      </div>
+    </section>
+
+    <!-- Descripción -->
+    <Section class="bg-white">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-gray-900 mb-6 text-center">¡Permítanos mostrarle el mundo que está en un libro!</h2>
+        <div class="w-20 h-1 bg-primary-600 mx-auto rounded-full mb-8"></div>
+        
+        <div class="prose prose-lg max-w-none">
+          <p class="text-xl text-gray-700 leading-relaxed mb-6">
+            Una de las mejores herramientas para desarrollar la creatividad de los niños y niñas es <strong>la lectura</strong>. El poder que tiene un libro es indiscutible, pero no todos tienen acceso a ellos.
+          </p>
+          
+          <p class="text-lg text-gray-600 leading-relaxed mb-6">
+            Esta es la razón por la cual Un Grano de Arena comienza el proyecto del bibliobús, para poner esos libros en las manos de los niños y comenzar así un movimiento de bibliotecas móviles que recorran cada rincón de Venezuela.
+          </p>
+
+          <p class="text-lg text-gray-600 leading-relaxed mb-8">
+            Tradicionalmente los bibliobuses han sido un medio para proporcionar servicios bibliotecarios en las comunidades rurales, sin embargo, <strong>El Principito</strong> tiene mucho más que ofrecer.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 mt-12">
+          <div class="bg-gradient-to-br from-primary-50 to-white p-6 rounded-2xl shadow-md text-center">
+            <div class="text-4xl mb-3">📖</div>
+            <h3 class="font-heading font-bold text-lg text-gray-900 mb-2">Acceso a Libros</h3>
+            <p class="text-gray-600 text-sm">Llevamos una biblioteca móvil a comunidades sin acceso</p>
+          </div>
+          
+          <div class="bg-gradient-to-br from-secondary-50 to-white p-6 rounded-2xl shadow-md text-center">
+            <div class="text-4xl mb-3">✨</div>
+            <h3 class="font-heading font-bold text-lg text-gray-900 mb-2">Creatividad</h3>
+            <p class="text-gray-600 text-sm">Fomentamos la imaginación y el pensamiento crítico</p>
+          </div>
+          
+          <div class="bg-gradient-to-br from-accent-50 to-white p-6 rounded-2xl shadow-md text-center">
+            <div class="text-4xl mb-3">🌟</div>
+            <h3 class="font-heading font-bold text-lg text-gray-900 mb-2">Futuro</h3>
+            <p class="text-gray-600 text-sm">Construyendo un mejor mañana a través de la educación</p>
+          </div>
+        </div>
+      </div>
+    </Section>
+
+    <!-- CTA -->
+    <Section class="bg-gradient-to-br from-primary-600 to-primary-800 text-white">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-white mb-6">Apoya Este Programa</h2>
+        <p class="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+          Tu donación nos ayuda a mantener el bibliobús en movimiento y a llevar libros a más niños y niñas.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button href="/donar" variant="secondary" size="lg">
+            Hacer una Donación
+          </Button>
+          <Button href="/programas" variant="outline" size="lg" class="border-white text-white hover:bg-white hover:text-primary-600">
+            Ver Otros Programas
+          </Button>
+        </div>
+      </div>
+    </Section>
+  </main>
+
+  <Footer />
+</Layout>
+

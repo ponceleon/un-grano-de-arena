@@ -1,0 +1,21 @@
+# Robots.txt para Un Grano de Arena
+# https://ungrano.org
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ungrano.org/sitemap-index.xml
+
+# Reglas específicas
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_astro/
+
+# Allow social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+

@@ -1,0 +1,146 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Section from '../../components/Section.astro';
+import Button from '../../components/Button.astro';
+---
+
+<Layout 
+  title="Actividades - Eventos y Talleres"
+  description="Eventos comunitarios, talleres y actividades que fortalecen los lazos y promueven el desarrollo."
+>
+  <Header />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="relative h-[500px] flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img 
+          src="/images/programas/actividades.jpg" 
+          alt="Actividades" 
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-gradient-to-b from-black/70 to-black/60"></div>
+      </div>
+      
+      <div class="relative z-10 container-custom text-center text-white">
+        <div class="text-5xl mb-4">📅</div>
+        <h1 class="font-heading font-bold mb-4">Actividades</h1>
+        <p class="text-2xl font-semibold text-accent-200 mb-4">Eventos y Talleres Comunitarios</p>
+        <p class="text-xl max-w-3xl mx-auto">
+          Creando espacios de encuentro, aprendizaje y crecimiento
+        </p>
+      </div>
+    </section>
+
+    <!-- Descripción -->
+    <Section class="bg-white">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-gray-900 mb-6 text-center">Construyendo Comunidad</h2>
+        <div class="w-20 h-1 bg-accent-600 mx-auto rounded-full mb-8"></div>
+        
+        <div class="prose prose-lg max-w-none">
+          <p class="text-xl text-gray-700 leading-relaxed mb-6">
+            A través de diversos eventos, talleres y actividades comunitarias, <strong>Un Grano de Arena</strong> crea espacios de encuentro, aprendizaje y crecimiento.
+          </p>
+          
+          <p class="text-lg text-gray-600 leading-relaxed mb-6">
+            Estas actividades fortalecen los lazos comunitarios y promueven el desarrollo integral de las personas, generando oportunidades para el intercambio de saberes y experiencias.
+          </p>
+
+          <p class="text-lg text-gray-600 leading-relaxed mb-8">
+            Pronto podrás estar al tanto de nuestras actividades en nuestro blog online, mientras tanto te invitamos a seguirnos en nuestro <a href="https://instagram.com/ungrano" target="_blank" class="text-primary-600 hover:text-primary-700 font-semibold">Instagram</a>.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 mt-12">
+          <div class="bg-gradient-to-br from-primary-50 to-white p-6 rounded-2xl shadow-md text-center">
+            <div class="text-4xl mb-3">🎨</div>
+            <h3 class="font-heading font-bold text-lg text-gray-900 mb-2">Talleres</h3>
+            <p class="text-gray-600 text-sm">Espacios de aprendizaje y desarrollo de habilidades</p>
+          </div>
+          
+          <div class="bg-gradient-to-br from-secondary-50 to-white p-6 rounded-2xl shadow-md text-center">
+            <div class="text-4xl mb-3">🎭</div>
+            <h3 class="font-heading font-bold text-lg text-gray-900 mb-2">Eventos</h3>
+            <p class="text-gray-600 text-sm">Celebraciones y encuentros comunitarios</p>
+          </div>
+          
+          <div class="bg-gradient-to-br from-accent-50 to-white p-6 rounded-2xl shadow-md text-center">
+            <div class="text-4xl mb-3">👥</div>
+            <h3 class="font-heading font-bold text-lg text-gray-900 mb-2">Actividades</h3>
+            <p class="text-gray-600 text-sm">Dinámicas grupales y actividades recreativas</p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-accent-50 to-white p-8 rounded-2xl mt-12">
+          <h3 class="font-heading font-bold text-2xl text-gray-900 mb-6 text-center">Tipos de Actividades</h3>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <h4 class="font-semibold text-lg text-gray-900 mb-3">🎓 Educativas</h4>
+              <ul class="space-y-2 text-gray-600">
+                <li>• Talleres de capacitación</li>
+                <li>• Charlas y conferencias</li>
+                <li>• Programas de formación</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold text-lg text-gray-900 mb-3">🎪 Recreativas</h4>
+              <ul class="space-y-2 text-gray-600">
+                <li>• Festivales comunitarios</li>
+                <li>• Actividades deportivas</li>
+                <li>• Eventos culturales</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold text-lg text-gray-900 mb-3">💪 Empoderamiento</h4>
+              <ul class="space-y-2 text-gray-600">
+                <li>• Talleres de liderazgo</li>
+                <li>• Grupos de apoyo</li>
+                <li>• Actividades de desarrollo personal</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold text-lg text-gray-900 mb-3">🌱 Comunitarias</h4>
+              <ul class="space-y-2 text-gray-600">
+                <li>• Jornadas de limpieza</li>
+                <li>• Huertos comunitarios</li>
+                <li>• Proyectos colaborativos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Section>
+
+    <!-- Social Media CTA -->
+    <Section class="bg-gradient-to-br from-primary-600 to-primary-800 text-white">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-white mb-6">Mantente Informado</h2>
+        <p class="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+          Síguenos en nuestras redes sociales para estar al tanto de nuestras próximas actividades y eventos.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+          <a 
+            href="https://instagram.com/ungrano" 
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn bg-white text-primary-600 hover:bg-gray-100"
+          >
+            📸 Síguenos en Instagram
+          </a>
+          <Button href="/donar" variant="secondary" size="lg">
+            Apoyar Nuestras Actividades
+          </Button>
+        </div>
+        <Button href="/programas" variant="outline" size="lg" class="border-white text-white hover:bg-white hover:text-primary-600">
+          Ver Otros Programas
+        </Button>
+      </div>
+    </Section>
+  </main>
+
+  <Footer />
+</Layout>
+

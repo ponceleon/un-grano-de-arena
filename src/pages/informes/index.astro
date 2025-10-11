@@ -1,0 +1,167 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Section from '../../components/Section.astro';
+import Button from '../../components/Button.astro';
+import Card from '../../components/Card.astro';
+
+const informes = [
+  {
+    year: '2020',
+    title: 'Informe Anual 2020',
+    description: 'El año 2020 vino cargado de lecciones para todas las personas. Un año que nos retó profundamente, que nos llevó a ser más creativos, y nos enseñó la importancia de adaptarnos, teniendo siempre presente la solidaridad.',
+    slug: '2020',
+    image: '/images/informes/informe-2020.jpg',
+  },
+  {
+    year: '2019',
+    title: 'Informe Anual 2019',
+    description: 'Un año de consolidación y crecimiento. Expandimos nuestros programas y llegamos a más comunidades necesitadas.',
+    slug: '2019',
+    image: '/images/informes/informe-2019.jpg',
+  },
+  {
+    year: '2018',
+    title: 'Informe Anual 2018',
+    description: 'El inicio de nuevos proyectos y el fortalecimiento de nuestro compromiso con las comunidades vulnerables.',
+    slug: '2018',
+    image: '/images/informes/informe-2018.jpg',
+  },
+];
+---
+
+<Layout 
+  title="Informes Anuales"
+  description="Conoce el impacto de Un Grano de Arena a través de nuestros informes anuales. Transparencia y rendición de cuentas."
+>
+  <Header />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="relative h-[500px] flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img 
+          src="/images/informes-hero.jpg" 
+          alt="Informes Anuales" 
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-gradient-to-b from-black/70 to-black/60"></div>
+      </div>
+      
+      <div class="relative z-10 container-custom text-center text-white">
+        <div class="text-5xl mb-6">📊</div>
+        <h1 class="font-heading font-bold mb-4">Informes Anuales</h1>
+        <p class="text-xl max-w-3xl mx-auto">
+          Transparencia y rendición de cuentas en cada uno de nuestros proyectos
+        </p>
+      </div>
+    </section>
+
+    <!-- Intro -->
+    <Section class="bg-white">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-gray-900 mb-6">Nuestro Compromiso con la Transparencia</h2>
+        <div class="w-20 h-1 bg-primary-600 mx-auto rounded-full mb-6"></div>
+        <p class="text-lg text-gray-600 leading-relaxed mb-8">
+          Cada año presentamos un informe detallado de nuestras actividades, logros, desafíos y el impacto generado en las comunidades que servimos. Creemos en la importancia de la transparencia y la rendición de cuentas.
+        </p>
+      </div>
+    </Section>
+
+    <!-- Informes -->
+    <Section class="bg-gradient-to-br from-primary-50 to-white">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-gray-900 mb-12 text-center">Informes Disponibles</h2>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+          {informes.map((informe) => (
+            <Card image={informe.image} imageAlt={informe.title} class="h-full flex flex-col">
+              <div class="flex-1">
+                <div class="inline-block bg-primary-600 text-white px-4 py-1 rounded-full text-sm font-semibold mb-3">
+                  {informe.year}
+                </div>
+                <h3 class="text-2xl font-heading font-bold text-gray-900 mb-3">{informe.title}</h3>
+                <p class="text-gray-600 mb-4">{informe.description}</p>
+              </div>
+              <div class="mt-auto">
+                <Button href={`/informes/${informe.slug}`} variant="primary" size="sm" class="w-full mb-2">
+                  Ver Informe
+                </Button>
+                <a 
+                  href={`/downloads/informe-${informe.year}.pdf`} 
+                  download
+                  class="btn btn-outline btn-sm w-full"
+                >
+                  📥 Descargar PDF
+                </a>
+              </div>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </Section>
+
+    <!-- Destacados -->
+    <Section class="bg-white">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-gray-900 mb-12 text-center">Lo Que Encontrarás</h2>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="flex items-start gap-4 p-6 bg-gradient-to-br from-primary-50 to-white rounded-xl border border-primary-100">
+            <div class="text-3xl">📈</div>
+            <div>
+              <h3 class="font-heading font-bold text-lg text-gray-900 mb-2">Logros y Métricas</h3>
+              <p class="text-gray-600">Números e impacto cuantificable de nuestro trabajo</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start gap-4 p-6 bg-gradient-to-br from-secondary-50 to-white rounded-xl border border-secondary-100">
+            <div class="text-3xl">📸</div>
+            <div>
+              <h3 class="font-heading font-bold text-lg text-gray-900 mb-2">Historias y Fotos</h3>
+              <p class="text-gray-600">Testimonios reales de las comunidades que servimos</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start gap-4 p-6 bg-gradient-to-br from-accent-50 to-white rounded-xl border border-accent-100">
+            <div class="text-3xl">💰</div>
+            <div>
+              <h3 class="font-heading font-bold text-lg text-gray-900 mb-2">Finanzas</h3>
+              <p class="text-gray-600">Desglose transparente del uso de los recursos</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start gap-4 p-6 bg-gradient-to-br from-primary-50 to-white rounded-xl border border-primary-100">
+            <div class="text-3xl">🎯</div>
+            <div>
+              <h3 class="font-heading font-bold text-lg text-gray-900 mb-2">Planes Futuros</h3>
+              <p class="text-gray-600">Objetivos y metas para el próximo año</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Section>
+
+    <!-- CTA -->
+    <Section class="bg-gradient-to-br from-primary-600 to-primary-800 text-white">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-white mb-6">Sé Parte de Nuestro Impacto</h2>
+        <p class="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+          Cada donación contribuye a los logros que reportamos en nuestros informes anuales. Tu apoyo hace la diferencia.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button href="/donar" variant="secondary" size="lg">
+            Hacer una Donación
+          </Button>
+          <Button href="/programas" variant="outline" size="lg" class="border-white text-white hover:bg-white hover:text-primary-600">
+            Conoce Nuestros Programas
+          </Button>
+        </div>
+      </div>
+    </Section>
+  </main>
+
+  <Footer />
+</Layout>
+
