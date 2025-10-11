@@ -41,7 +41,7 @@ export default function Navigation() {
             {item.children ? (
               <div>
                 <button 
-                  className="flex items-center gap-1 text-gray-700 hover:text-primary-600 font-medium transition-colors"
+                  className="flex items-center gap-1 text-white hover:text-secondary-400 font-medium transition-colors"
                   onClick={() => toggleDropdown(item.label)}
                 >
                   {item.label}
@@ -52,7 +52,7 @@ export default function Navigation() {
                     <a
                       key={child.label}
                       href={child.href}
-                      className="block px-4 py-2 text-gray-700 hover:bg-primary-50 hover:text-primary-600 transition-colors"
+                      className="block px-4 py-2 text-brown-500 hover:bg-primary-50 hover:text-primary-600 transition-colors"
                     >
                       {child.label}
                     </a>
@@ -62,7 +62,7 @@ export default function Navigation() {
             ) : (
               <a 
                 href={item.href}
-                className="text-gray-700 hover:text-primary-600 font-medium transition-colors"
+                className="text-white hover:text-secondary-400 font-medium transition-colors"
               >
                 {item.label}
               </a>
@@ -74,7 +74,7 @@ export default function Navigation() {
       {/* Donate Button */}
       <a 
         href="/donar"
-        className="hidden lg:inline-flex btn btn-primary btn-sm"
+        className="hidden lg:inline-flex bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 items-center justify-center gap-2 hover:shadow-lg active:scale-95"
       >
         Donar
       </a>
@@ -82,7 +82,7 @@ export default function Navigation() {
       {/* Mobile Menu Button */}
       <button 
         onClick={toggleMenu}
-        className="lg:hidden p-2 text-gray-700 hover:text-primary-600 transition-colors"
+        className="lg:hidden p-2 text-white hover:text-secondary-400 transition-colors"
         aria-label="Toggle menu"
       >
         {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -90,7 +90,7 @@ export default function Navigation() {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="lg:hidden absolute top-20 left-0 right-0 bg-white shadow-lg border-t">
+        <div className="lg:hidden absolute top-20 md:top-24 left-0 right-0 bg-white shadow-lg border-t">
           <ul className="py-4">
             {navItems.map((item) => (
               <li key={item.label}>
@@ -98,7 +98,7 @@ export default function Navigation() {
                   <div>
                     <button
                       onClick={() => toggleDropdown(item.label)}
-                      className="w-full text-left px-6 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-600 font-medium transition-colors flex items-center justify-between"
+                      className="w-full text-left px-6 py-3 text-brown-500 hover:bg-primary-50 hover:text-primary-600 font-medium transition-colors flex items-center justify-between"
                     >
                       {item.label}
                       <ChevronDown 
@@ -113,7 +113,7 @@ export default function Navigation() {
                           <li key={child.label}>
                             <a
                               href={child.href}
-                              className="block px-10 py-2 text-gray-600 hover:text-primary-600 transition-colors"
+                              className="block px-10 py-2 text-brown-600 hover:text-primary-600 transition-colors"
                             >
                               {child.label}
                             </a>
@@ -125,7 +125,7 @@ export default function Navigation() {
                 ) : (
                   <a
                     href={item.href}
-                    className="block px-6 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-600 font-medium transition-colors"
+                    className="block px-6 py-3 text-brown-500 hover:bg-primary-50 hover:text-primary-600 font-medium transition-colors"
                   >
                     {item.label}
                   </a>
@@ -133,7 +133,7 @@ export default function Navigation() {
               </li>
             ))}
             <li className="px-6 pt-4">
-              <a href="/donar" className="btn btn-primary w-full">
+              <a href="/donar" className="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 inline-flex items-center justify-center gap-2 w-full">
                 Donar
               </a>
             </li>
