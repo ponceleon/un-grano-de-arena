@@ -7,43 +7,28 @@ export interface Aliado {
 
 export const aliados: Aliado[] = [
   {
-    name: "Arte Vita",
-    logo: "/images/aliados/artevita.png",
-    description: "",
-  },
-  {
     name: "CDEI",
-    logo: "/images/aliados/cdei.png",
-    description: "",
+    logo: "/images/aliados/cdei.jpg",
+    description: "Liliana Malavé",
   },
   {
-    name: "Liliana Malavé",
-    logo: "/images/aliados/liliana-malave.png",
-    description: "",
-  },
-  {
-    name: "Rosicler Ramirez",
-    logo: "/images/aliados/rosicler.png",
-    description: "",
+    name: "Arte Vita",
+    logo: "/images/aliados/arte-vita.jpg",
+    description: "Rosicler Ramirez",
   },
   {
     name: "Proyecto Niños de la Selva",
-    logo: "/images/aliados/ninos-selva.png",
-    description: "",
+    logo: "/images/aliados/proyecto-ninos-selva.jpg",
+    description: "Tony Velazquez",
   },
   {
-    name: "Tony Velazquez",
-    logo: "/images/aliados/tony.png",
-    description: "",
-  },
-  {
-    name: "Zumba Lucía",
-    logo: "/images/aliados/zumba-lucia.png",
-    description: "",
+    name: "Princesa Zumba",
+    logo: "/images/aliados/logo-lucia.jpg",
+    description: "Zumba Lucía",
   },
   {
     name: "Perfect Smile",
-    logo: "/images/aliados/perfect-smile.png",
+    logo: "/images/aliados/perfect-smile-2.jpg",
     description: "",
   },
 ];

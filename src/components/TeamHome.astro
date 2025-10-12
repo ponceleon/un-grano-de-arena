@@ -1,10 +1,6 @@
 ---
 import Section from './Section.astro';
-import Button from './Button.astro';
 import { teamMembers } from '../data/team';
-
-// Mostrar solo 4 miembros en el home
-const featuredTeam = teamMembers.slice(0, 4);
 ---
 
 <Section class="bg-gradient-to-br from-primary-50 to-white">
@@ -16,8 +12,8 @@ const featuredTeam = teamMembers.slice(0, 4);
     <div class="w-20 h-1 bg-accent-500 mx-auto rounded-full"></div>
   </div>
 
-  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-    {featuredTeam.map((member) => (
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+    {teamMembers.map((member) => (
       <div class="text-center group">
         <div class="mb-4 relative overflow-hidden rounded-2xl aspect-square border-4 border-secondary-200 group-hover:border-primary-400 transition-colors">
           <img 
@@ -27,18 +23,12 @@ const featuredTeam = teamMembers.slice(0, 4);
           />
           <div class="absolute inset-0 bg-gradient-to-t from-brown-900/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
         </div>
-        <h3 class="font-heading font-bold text-lg text-brown-800">{member.name}</h3>
+        <h3 class="font-heading font-bold text-sm text-brown-800">{member.name}</h3>
         {member.role && (
-          <p class="text-accent-600 font-medium">{member.role}</p>
+          <p class="text-accent-600 font-medium text-xs">{member.role}</p>
         )}
       </div>
     ))}
-  </div>
-
-  <div class="text-center">
-    <Button href="/nosotros/equipo" variant="outline" size="lg">
-      Conoce al Equipo Completo
-    </Button>
   </div>
 </Section>
 

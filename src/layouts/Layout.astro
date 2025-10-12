@@ -24,6 +24,18 @@ const fullTitle = `${title} | Un Grano de Arena`;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     
+    <!-- Fuentes tipográficas -->
+    <!-- TODO: Configurar Adobe Fonts para Clone Rounded Latin -->
+    <!-- 1. Ve a https://fonts.adobe.com/fonts/clone-rounded -->
+    <!-- 2. Crea un proyecto web y agrega Clone Rounded Latin (peso medium) -->
+    <!-- 3. Copia el código <link> que Adobe te proporciona aquí -->
+    <!-- Ejemplo: <link rel="stylesheet" href="https://use.typekit.net/TU_ID_PROYECTO.css"> -->
+    
+    <!-- Fuente de respaldo temporal (Quicksand) - similar a Clone Rounded Latin -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    
     <!-- SEO -->
     <title>{fullTitle}</title>
     <meta name="description" content={description} />

@@ -9,7 +9,7 @@ import { ArrowRight } from 'lucide-react';
     <img 
       src="/images/hero-bg.jpg" 
       alt="Un Grano de Arena" 
-      class="w-full h-full object-cover"
+      class="w-full h-full object-cover hero-zoom"
     />
     <div class="absolute inset-0 bg-gradient-to-b from-brown-900/80 via-brown-800/70 to-brown-900/90"></div>
   </div>
@@ -19,14 +19,25 @@ import { ArrowRight } from 'lucide-react';
     <h1 class="font-heading font-bold text-5xl md:text-6xl lg:text-7xl mb-6 fade-in text-primary-300">
       Un Grano de Arena
     </h1>
-    <p class="text-xl md:text-2xl lg:text-3xl mb-8 max-w-3xl mx-auto fade-in text-gray-100" style="animation-delay: 0.2s;">
-      Acompañando en su proceso de florecimiento humano a las personas en situación de vulnerabilidad
+    <p class="text-2xl md:text-3xl lg:text-4xl mb-4 max-w-4xl mx-auto fade-in font-bold text-white" style="animation-delay: 0.2s;">
+      Nadie florece solo
     </p>
-    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center fade-in" style="animation-delay: 0.4s;">
-      <Button href="/programas" variant="primary" size="lg">
+    <p class="text-xl md:text-2xl lg:text-3xl mb-8 max-w-3xl mx-auto fade-in text-gray-100" style="animation-delay: 0.3s;">
+      Pongamos juntos un grano de arena
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center fade-in" style="animation-delay: 0.5s;">
+      <a 
+        href="#programas"
+        class="inline-flex items-center justify-center px-8 py-4 text-lg font-medium rounded-lg transition-all duration-300 bg-primary-500 text-brown-800 hover:bg-primary-600 hover:shadow-lg active:scale-95"
+      >
         Conoce Nuestros Programas
-      </Button>
-      <a href="/donar" class="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-lg font-medium transition-all duration-300 inline-flex items-center justify-center gap-2 hover:shadow-lg active:scale-95 text-lg">
+      </a>
+      <a 
+        href="https://www.paypal.com/paypalme/ungrano"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-lg font-medium transition-all duration-300 inline-flex items-center justify-center gap-2 hover:shadow-lg active:scale-95 text-lg"
+      >
         Haz una Donación
       </a>
     </div>

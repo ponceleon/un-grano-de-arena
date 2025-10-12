@@ -1,72 +1,51 @@
 ---
-import Section from './Section.astro';
-import Button from './Button.astro';
-import { Heart, Users, Sparkles } from 'lucide-react';
+// CTA de Donación - Pantalla completa con efecto visual impactante
 ---
 
-<Section class="bg-gradient-to-br from-secondary-100 via-white to-primary-100">
-  <div class="max-w-5xl mx-auto">
-    <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-primary-400">
-      <div class="grid md:grid-cols-2">
-        <!-- Image Side -->
-        <div class="relative h-64 md:h-auto">
-          <img 
-            src="/images/donation-cta.jpg" 
-            alt="Ayúdanos a cambiar vidas"
-            class="w-full h-full object-cover"
-          />
-          <div class="absolute inset-0 bg-gradient-to-r from-accent-600/80 to-transparent"></div>
-        </div>
+<section class="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+  <!-- Background Image with Overlay -->
+  <div class="absolute inset-0 z-0">
+    <img 
+      src="/images/hero-bg.jpg" 
+      alt="Apoya nuestros programas" 
+      class="w-full h-full object-cover hero-zoom"
+    />
+    <div class="absolute inset-0 bg-gradient-to-b from-brown-900/85 via-red-900/75 to-brown-900/90"></div>
+  </div>
 
-        <!-- Content Side -->
-        <div class="p-8 md:p-12 flex flex-col justify-center">
-          <div class="mb-6">
-            <Heart class="w-12 h-12 text-red-500 mb-4" />
-            <h2 class="text-3xl md:text-4xl font-heading font-bold text-brown-700 mb-4">
-              Con tu aporte podemos cambiar vidas
-            </h2>
-            <p class="text-brown-600 text-lg mb-6">
-              Cada donación, sin importar el monto, nos ayuda a continuar nuestro trabajo y a llevar esperanza a quienes más lo necesitan.
-            </p>
-          </div>
-
-          <div class="space-y-4 mb-8">
-            <div class="flex items-start gap-3">
-              <div class="w-8 h-8 bg-secondary-200 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                <Users class="w-4 h-4 text-secondary-700" />
-              </div>
-              <div>
-                <p class="font-semibold text-brown-800">Impacto Directo</p>
-                <p class="text-sm text-brown-600">Tu donación llega directamente a las comunidades</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-3">
-              <div class="w-8 h-8 bg-primary-200 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                <Sparkles class="w-4 h-4 text-primary-700" />
-              </div>
-              <div>
-                <p class="font-semibold text-brown-800">Transparencia Total</p>
-                <p class="text-sm text-brown-600">Informes anuales y reportes de cada actividad</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex flex-col sm:flex-row gap-4">
-            <a href="/donar" class="flex-1 bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-lg font-medium transition-all duration-300 inline-flex items-center justify-center gap-2 hover:shadow-lg active:scale-95 text-lg">
-              Donar Ahora
-            </a>
-            <Button href="/programas" variant="outline" size="lg" class="flex-1">
-              Ver Programas
-            </Button>
-          </div>
-
-          <p class="text-sm text-brown-600 mt-6 text-center font-semibold">
-            💚 Juntos podemos construir la paz positiva
-          </p>
-        </div>
-      </div>
+  <!-- Content -->
+  <div class="relative z-10 container-custom text-center text-white px-4">
+    <h2 class="font-heading font-bold text-4xl md:text-5xl lg:text-6xl mb-8 fade-in text-primary-300">
+      Apoya Nuestros Programas
+    </h2>
+    <p class="text-xl md:text-2xl lg:text-3xl mb-12 max-w-3xl mx-auto fade-in text-gray-100 leading-relaxed" style="animation-delay: 0.2s;">
+      Tu donación nos permite continuar y expandir estos programas para llegar a más personas que lo necesitan.
+    </p>
+    
+    <!-- Botón de Donación Principal - Extra Grande y Destacado -->
+    <div class="fade-in" style="animation-delay: 0.4s;">
+      <a 
+        href="https://www.paypal.com/paypalme/ungrano"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center justify-center px-12 py-6 text-2xl md:text-3xl font-bold rounded-2xl transition-all duration-300 bg-red-500 hover:bg-red-600 text-white hover:shadow-2xl hover:shadow-red-500/50 active:scale-95 transform hover:scale-105"
+      >
+        🤝 Hacer una Donación Ahora
+      </a>
+      
+      <!-- Mensaje adicional debajo del botón -->
+      <p class="mt-8 text-lg md:text-xl text-primary-200 font-medium">
+        Cada contribución marca la diferencia
+      </p>
     </div>
   </div>
-</Section>
+
+  <!-- Indicador de scroll opcional -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce opacity-60">
+    <div class="w-6 h-10 border-2 border-primary-300 rounded-full flex justify-center">
+      <div class="w-1 h-3 bg-primary-300 rounded-full mt-2"></div>
+    </div>
+  </div>
+</section>
 
 

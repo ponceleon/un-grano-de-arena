@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+/* Open Sans - Tipografía secundaria para texto general */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* Clone Rounded Latin - Tipografía primaria para encabezados */
+/* Nota: Esta fuente está disponible en Adobe Fonts. 
+   Para usarla, debes crear un proyecto en fonts.adobe.com y obtener el código de inserción.
+   Temporalmente se usará una fuente similar disponible públicamente. */
 
 @tailwind base;
 @tailwind components;
@@ -7,6 +13,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 100px; /* Offset para el header fijo */
   }
 
   body {
@@ -14,7 +21,8 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-heading font-bold;
+    @apply font-heading;
+    font-weight: 500; /* Medium weight para Clone Rounded Latin */
   }
 
   h1 {
@@ -120,6 +128,20 @@
     to {
       opacity: 1;
       transform: scale(1);
+    }
+  }
+
+  /* Animación de zoom para el hero */
+  .hero-zoom {
+    animation: heroZoom 20s ease-in-out infinite alternate;
+  }
+
+  @keyframes heroZoom {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
     }
   }
 }

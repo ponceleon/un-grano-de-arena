@@ -90,8 +90,11 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        heading: ['Poppins', 'sans-serif'],
+        // Open Sans - Tipografía secundaria para texto general (todos los pesos)
+        sans: ['Open Sans', 'system-ui', 'sans-serif'],
+        // Clone Rounded Latin - Tipografía primaria (peso medium)
+        // Nota: Cuando configures Adobe Fonts, usa 'clone-rounded', 'sans-serif'
+        heading: ['Clone Rounded Latin', 'Quicksand', 'sans-serif'],
       },
     },
   },

@@ -2,8 +2,11 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
+import QuienesSomos from '../components/QuienesSomos.astro';
 import VisionMision from '../components/VisionMision.astro';
+import FundadoraHome from '../components/FundadoraHome.astro';
 import ProgramasHome from '../components/ProgramasHome.astro';
+import AliadosHome from '../components/AliadosHome.astro';
 import TeamHome from '../components/TeamHome.astro';
 import Testimonial from '../components/Testimonial.astro';
 import CTADonacion from '../components/CTADonacion.astro';
@@ -11,17 +14,36 @@ import Footer from '../components/Footer.astro';
 ---
 
 <Layout 
-  title="Inicio"
+  title="Un Grano de Arena - Juntos Florecemos"
   description="Un Grano de Arena es una organización sin fines de lucro que acompaña en su proceso de florecimiento humano a las personas en situación de vulnerabilidad."
 >
   <Header />
   
   <main>
-    <Hero />
-    <VisionMision />
-    <ProgramasHome />
-    <TeamHome />
+    <div id="inicio">
+      <Hero />
+    </div>
+
+    <div id="nosotros">
+      <QuienesSomos />
+      <VisionMision />
+      <FundadoraHome />
+    </div>
+
+    <div id="programas">
+      <ProgramasHome />
+    </div>
+
+    <div id="aliados">
+      <AliadosHome />
+    </div>
+
+    <div id="equipo">
+      <TeamHome />
+    </div>
+
     <Testimonial />
+    
     <CTADonacion />
   </main>
 

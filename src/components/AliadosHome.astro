@@ -1,0 +1,42 @@
+---
+import Section from './Section.astro';
+import { aliados } from '../data/aliados';
+---
+
+<Section class="bg-white">
+  <div class="max-w-4xl mx-auto text-center mb-12">
+    <h2 class="text-brown-700 mb-4">Nuestros Aliados</h2>
+    <div class="w-20 h-1 bg-primary-600 mx-auto rounded-full mb-6"></div>
+    <p class="text-lg text-brown-600 leading-relaxed">
+      Nuestro trabajo no sería posible sin el apoyo y colaboración de organizaciones, empresas y personas comprometidas con el cambio social. Juntos multiplicamos el impacto y llegamos a más comunidades.
+    </p>
+  </div>
+
+  <!-- Aliados Grid -->
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+    {aliados.map((aliado) => (
+      <div class="group h-full">
+        <div class="bg-white rounded-2xl shadow-md p-6 text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border-2 border-primary-100 h-full flex flex-col">
+          {/* Logo de la organización */}
+          {aliado.logo && (
+            <div class="w-32 h-32 mx-auto mb-4 bg-white rounded-xl flex items-center justify-center overflow-hidden flex-shrink-0">
+              <img 
+                src={aliado.logo} 
+                alt={aliado.name}
+                class="max-w-full max-h-full object-contain transition-transform duration-300 group-hover:scale-110"
+              />
+            </div>
+          )}
+          
+          <div class="flex-grow flex flex-col justify-center">
+            <h3 class="font-heading font-bold text-sm text-brown-700">{aliado.name}</h3>
+            {aliado.description && (
+              <p class="text-xs text-brown-500 mt-1">{aliado.description}</p>
+            )}
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</Section>
+
