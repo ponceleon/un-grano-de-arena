@@ -1,51 +1,110 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Hero from '../components/Hero.astro';
-import QuienesSomos from '../components/QuienesSomos.astro';
-import VisionMision from '../components/VisionMision.astro';
-import FundadoraHome from '../components/FundadoraHome.astro';
-import ProgramasHome from '../components/ProgramasHome.astro';
-import AliadosHome from '../components/AliadosHome.astro';
-import TeamHome from '../components/TeamHome.astro';
-import Testimonial from '../components/Testimonial.astro';
-import CTADonacion from '../components/CTADonacion.astro';
-import Footer from '../components/Footer.astro';
 ---
 
 <Layout 
-  title="Un Grano de Arena - Juntos Florecemos"
-  description="Un Grano de Arena es una organización sin fines de lucro que acompaña en su proceso de florecimiento humano a las personas en situación de vulnerabilidad."
+  title="Un Grano de Arena - Próximamente"
+  description="Un Grano de Arena está renovando su sitio web. Pronto estaremos de vuelta con una nueva experiencia."
 >
-  <Header />
-  
-  <main>
-    <div id="inicio">
-      <Hero />
+  <main class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <!-- Background Image with Overlay -->
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="/images/hero-bg.jpg" 
+        alt="Un Grano de Arena" 
+        class="w-full h-full object-cover hero-zoom"
+      />
+      <div class="absolute inset-0 bg-gradient-to-b from-brown-900/85 via-brown-800/75 to-brown-900/90"></div>
     </div>
 
-    <div id="nosotros">
-      <QuienesSomos />
-      <VisionMision />
-      <FundadoraHome />
+    <!-- Content -->
+    <div class="relative z-10 container mx-auto px-4 text-center text-white max-w-4xl">
+      <!-- Logo -->
+      <div class="mb-8 fade-in">
+        <img 
+          src="/images/logo-ugda.png" 
+          alt="Un Grano de Arena Logo" 
+          class="w-48 md:w-64 mx-auto drop-shadow-2xl"
+        />
+      </div>
+
+      <!-- Main Heading -->
+      <h1 class="font-heading font-bold text-5xl md:text-6xl lg:text-7xl mb-6 fade-in text-primary-300" style="animation-delay: 0.2s;">
+        Próximamente
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="text-2xl md:text-3xl lg:text-4xl mb-6 fade-in font-bold text-white" style="animation-delay: 0.3s;">
+        Nadie florece solo
+      </p>
+
+      <!-- Description -->
+      <p class="text-lg md:text-xl lg:text-2xl mb-10 max-w-3xl mx-auto fade-in text-gray-100 leading-relaxed" style="animation-delay: 0.4s;">
+        Estamos trabajando en una nueva experiencia para compartir nuestra misión.<br/>
+        Pronto podrás conocer más sobre cómo juntos ponemos un grano de arena.
+      </p>
+
+      <!-- Contact Info -->
+      <div class="fade-in space-y-4" style="animation-delay: 0.5s;">
+        <p class="text-lg md:text-xl text-primary-300 font-medium">
+          Mientras tanto, puedes contactarnos:
+        </p>
+        <a 
+          href="mailto:info@ungranodearena.org" 
+          class="inline-block text-white hover:text-primary-400 transition-colors text-lg md:text-xl underline"
+        >
+          info@ungranodearena.org
+        </a>
+      </div>
+
+      <!-- Dev Access Link (Optional) -->
+      <!-- <div class="mt-12 fade-in" style="animation-delay: 0.6s;">
+        <a 
+          href="/dev" 
+          class="inline-flex items-center justify-center px-6 py-3 text-sm font-medium rounded-lg transition-all duration-300 bg-primary-500/20 text-primary-300 hover:bg-primary-500/30 border-2 border-primary-300/50 hover:border-primary-300"
+        >
+          Vista previa del sitio
+        </a>
+      </div> -->
     </div>
 
-    <div id="programas">
-      <ProgramasHome />
+    <!-- Animated Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
+      <div class="w-6 h-10 border-2 border-primary-300 rounded-full flex justify-center">
+        <div class="w-1 h-3 bg-primary-300 rounded-full mt-2"></div>
+      </div>
     </div>
-
-    <div id="aliados">
-      <AliadosHome />
-    </div>
-
-    <div id="equipo">
-      <TeamHome />
-    </div>
-
-    <Testimonial />
-    
-    <CTADonacion />
   </main>
-
-  <Footer />
 </Layout>
+
+<style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  .hero-zoom {
+    animation: heroZoom 20s ease-in-out infinite alternate;
+  }
+
+  @keyframes heroZoom {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+</style>
+
