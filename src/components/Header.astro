@@ -2,7 +2,7 @@
 import Navigation from './Navigation';
 ---
 
-<header class="sticky top-0 z-50 bg-primary-500 shadow-lg">
+<header id="main-header" class="sticky top-0 z-50 bg-primary-500 shadow-lg transition-all duration-300">
   <div class="container-custom">
     <div class="flex items-center justify-between h-20 md:h-24">
       <!-- Logo -->
@@ -19,5 +19,31 @@ import Navigation from './Navigation';
     </div>
   </div>
 </header>
+
+<script>
+  // Agregar transparencia al header al hacer scroll
+  const header = document.getElementById('main-header');
+  let lastScrollY = window.scrollY;
+
+  function handleScroll() {
+    const currentScrollY = window.scrollY;
+    
+    if (currentScrollY > 50) {
+      // Cuando se hace scroll, reducir opacidad a 90%
+      header?.classList.add('opacity-90');
+    } else {
+      // En la parte superior, opacidad 100%
+      header?.classList.remove('opacity-90');
+    }
+    
+    lastScrollY = currentScrollY;
+  }
+
+  // Escuchar el evento scroll
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  
+  // Ejecutar una vez al cargar para establecer el estado inicial
+  handleScroll();
+</script>
 
 

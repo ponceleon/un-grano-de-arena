@@ -8,10 +8,10 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { label: 'Inicio', href: '#inicio' },
-  { label: 'Nosotros', href: '#nosotros' },
-  { label: 'Programas', href: '#programas' },
-  { label: 'Aliados', href: '#aliados' },
-  { label: 'Equipo', href: '#equipo' },
+  { label: 'Sobre Nosotros', href: '#nosotros' },
+  { label: 'Nuestros Programas', href: '#programas' },
+  // { label: 'Aliados', href: '#aliados' },
+  { label: 'Nuestro Equipo', href: '#equipo' },
 ];
 
 export default function Navigation() {
@@ -42,7 +42,7 @@ export default function Navigation() {
         rel="noopener noreferrer"
         className="hidden lg:inline-flex bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 items-center justify-center gap-2 hover:shadow-lg active:scale-95"
       >
-        Donar
+        Hacer una Donación
       </a>
 
       {/* Mobile Menu Button */}
@@ -76,7 +76,7 @@ export default function Navigation() {
                 rel="noopener noreferrer"
                 className="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 inline-flex items-center justify-center gap-2 w-full"
               >
-                Donar
+                Hacer una Donación
               </a>
             </li>
           </ul>
