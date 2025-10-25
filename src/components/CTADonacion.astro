@@ -1,5 +1,13 @@
 ---
-// CTA de Donación - Pantalla completa con efecto visual impactante
+import type { Language } from '../i18n';
+import { getTranslations } from '../i18n';
+
+interface Props {
+  lang?: Language;
+}
+
+const { lang = 'es' } = Astro.props;
+const t = getTranslations(lang);
 ---
 
 <section class="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
@@ -16,10 +24,10 @@
   <!-- Content -->
   <div class="relative z-10 container-custom text-center text-white px-4">
     <h2 class="font-heading font-bold text-4xl md:text-5xl lg:text-6xl mb-8 fade-in text-primary-300">
-      Apoya Nuestros Programas
+      {t.ctaDonacion.title}
     </h2>
     <p class="text-xl md:text-2xl lg:text-3xl mb-12 max-w-3xl mx-auto fade-in text-gray-100 leading-relaxed" style="animation-delay: 0.2s;">
-      Tu donación nos permite continuar y expandir estos programas para llegar a más personas que lo necesitan.
+      {t.ctaDonacion.description}
     </p>
     
     <!-- Botón de Donación Principal - Extra Grande y Destacado -->
@@ -30,12 +38,12 @@
         rel="noopener noreferrer"
         class="inline-flex items-center justify-center px-12 py-6 text-2xl md:text-3xl font-bold rounded-2xl transition-all duration-300 bg-red-500 hover:bg-red-600 text-white hover:shadow-2xl hover:shadow-red-500/50 active:scale-95 transform hover:scale-105"
       >
-        🤝 Hacer una Donación Ahora
+        {t.ctaDonacion.boton}
       </a>
       
       <!-- Mensaje adicional debajo del botón -->
       <p class="mt-8 text-lg md:text-xl text-primary-200 font-medium">
-        Cada contribución marca la diferencia
+        {t.ctaDonacion.mensaje}
       </p>
     </div>
   </div>
@@ -47,5 +55,3 @@
     </div>
   </div>
 </section>
-
-

@@ -1,6 +1,14 @@
 ---
 import Section from './Section.astro';
-import Button from './Button.astro';
+import type { Language } from '../i18n';
+import { getTranslations } from '../i18n';
+
+interface Props {
+  lang?: Language;
+}
+
+const { lang = 'es' } = Astro.props;
+const t = getTranslations(lang);
 ---
 
 <Section class="bg-primary-100">
@@ -25,7 +33,7 @@ import Button from './Button.astro';
     <div class="text-center">
       <div class="mb-8">
         <h2 class="text-4xl font-heading font-bold text-brown-900 mb-4">
-          Bienvenida a Un Grano de Arena
+          {t.fundadora.title}
         </h2>
         <div class="flex justify-center">
           <div class="w-20 h-1 bg-brown-800 rounded-full"></div>
@@ -34,37 +42,37 @@ import Button from './Button.astro';
 
       <div class="space-y-6 text-brown-800 max-w-3xl mx-auto">
         <p class="text-lg leading-relaxed">
-          Creemos que los grandes cambios comienzan con pequeños gestos, y que cada persona tiene algo que aportar: una historia, una idea, un grano de arena. Si llegaste hasta aquí, es porque también crees que el cambio es posible. En <strong class="text-brown-900 font-bold">Un Grano de Arena</strong>, trabajamos para construir comunidades más humanas, donde cada persona pueda florecer, unidos por la cooperación y el compromiso.
+          {t.fundadora.parrafo1}
         </p>
 
         <p class="text-lg leading-relaxed">
-          Hoy te damos la bienvenida a esta red de granos que creen en la posibilidad de un mundo más justo, más igualitario, más humano.
+          {t.fundadora.parrafo2}
         </p>
 
         <div class="bg-white p-6 rounded-2xl shadow-md border-l-4 border-brown-800">
           <p class="text-lg leading-relaxed font-medium text-brown-800">
-            Tu tiempo, tu energía, tu punto de vista importan.
+            {t.fundadora.destacado1}
           </p>
           <p class="text-xl font-bold text-brown-900 mt-3">
-            Únete. La paz se construye contigo.
+            {t.fundadora.destacado2}
           </p>
         </div>
 
         <div class="space-y-3 pt-4">
           <p class="text-lg leading-relaxed">
-            ¿Quieres ser parte de nuestro voluntariado?
+            {t.fundadora.pregunta1}
           </p>
           <p class="text-lg leading-relaxed">
-            ¿Apoyar nuestras iniciativas o proponer una nueva idea?
+            {t.fundadora.pregunta2}
           </p>
         </div>
 
         <div class="pt-2">
           <p class="text-2xl font-bold text-brown-900 mb-2">
-            Súmate hoy.
+            {t.fundadora.llamado1}
           </p>
           <p class="text-lg leading-relaxed font-medium text-brown-800">
-            Tu grano puede marcar la diferencia.
+            {t.fundadora.llamado2}
           </p>
         </div>
       </div>
@@ -74,7 +82,7 @@ import Button from './Button.astro';
           href="#programas"
           class="inline-flex items-center justify-center px-8 py-4 text-lg font-medium rounded-lg transition-all duration-300 bg-primary-500 text-brown-800 hover:bg-primary-600 hover:shadow-lg active:scale-95"
         >
-          Conoce Nuestros Programas
+          {t.fundadora.ctaProgramas}
         </a>
         <a 
           href="https://www.paypal.com/paypalme/ungrano"
@@ -82,10 +90,9 @@ import Button from './Button.astro';
           rel="noopener noreferrer"
           class="inline-flex items-center justify-center px-8 py-4 text-lg font-medium rounded-lg transition-all duration-300 border-2 border-primary-600 text-white bg-red-500 hover:bg-red-600 hover:text-white active:scale-95"
         >
-          Suma tu Grano de Arena
+          {t.fundadora.ctaDonacion}
         </a>
       </div>
     </div>
   </div>
 </Section>
-

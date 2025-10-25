@@ -1,5 +1,12 @@
 ---
 import Navigation from './Navigation';
+import type { Language } from '../i18n';
+
+interface Props {
+  lang?: Language;
+}
+
+const { lang = 'es' } = Astro.props;
 ---
 
 <header id="main-header" class="sticky top-0 z-50 bg-primary-500 shadow-lg transition-all duration-300">
@@ -15,7 +22,7 @@ import Navigation from './Navigation';
       </a>
 
       <!-- Navigation -->
-      <Navigation client:load />
+      <Navigation client:load lang={lang} />
     </div>
   </div>
 </header>
@@ -45,5 +52,3 @@ import Navigation from './Navigation';
   // Ejecutar una vez al cargar para establecer el estado inicial
   handleScroll();
 </script>
-
-

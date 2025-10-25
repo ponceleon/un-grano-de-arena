@@ -1,5 +1,14 @@
 ---
 import { Facebook, Twitter, Youtube, Instagram, Mail } from 'lucide-react';
+import type { Language } from '../i18n';
+import { getTranslations } from '../i18n';
+
+interface Props {
+  lang?: Language;
+}
+
+const { lang = 'es' } = Astro.props;
+const t = getTranslations(lang);
 ---
 
 <footer class="bg-brown-500 text-white">
@@ -9,26 +18,26 @@ import { Facebook, Twitter, Youtube, Instagram, Mail } from 'lucide-react';
       <div>
         <h3 class="text-primary-300 font-heading font-bold text-lg mb-4">Un Grano de Arena</h3>
         <p class="text-sm mb-4 text-gray-100">
-          Organización sin fines de lucro que acompaña en su proceso de florecimiento humano a las personas en situación de vulnerabilidad.
+          {t.footer.about}
         </p>
       </div>
 
       <!-- Quick Links -->
       <div>
-        <h3 class="text-primary-300 font-heading font-bold text-lg mb-4">Enlaces</h3>
+        <h3 class="text-primary-300 font-heading font-bold text-lg mb-4">{t.footer.linksTitle}</h3>
         <ul class="space-y-2 text-sm">
-          <li><a href="#inicio" class="hover:text-primary-300 transition-colors">Inicio</a></li>
-          <li><a href="#nosotros" class="hover:text-primary-300 transition-colors">Nosotros</a></li>
-          <li><a href="#programas" class="hover:text-primary-300 transition-colors">Programas</a></li>
-          <li><a href="#equipo" class="hover:text-primary-300 transition-colors">Equipo</a></li>
+          <li><a href="#inicio" class="hover:text-primary-300 transition-colors">{t.nav.inicio}</a></li>
+          <li><a href="#nosotros" class="hover:text-primary-300 transition-colors">{t.nav.sobreNosotros}</a></li>
+          <li><a href="#programas" class="hover:text-primary-300 transition-colors">{t.nav.nuestrosProgramas}</a></li>
+          <li><a href="#equipo" class="hover:text-primary-300 transition-colors">{t.nav.nuestroEquipo}</a></li>
         </ul>
       </div>
 
       <!-- Donation -->
       <div>
-        <h3 class="text-primary-300 font-heading font-bold text-lg mb-4">Apoya Nuestro Trabajo</h3>
+        <h3 class="text-primary-300 font-heading font-bold text-lg mb-4">{t.footer.donacionTitle}</h3>
         <p class="text-sm text-gray-100 mb-4">
-          Tu donación nos permite seguir acompañando a personas en situación de vulnerabilidad.
+          {t.footer.donacionDescription}
         </p>
         <a 
           href="https://www.paypal.com/paypalme/ungrano"
@@ -36,13 +45,13 @@ import { Facebook, Twitter, Youtube, Instagram, Mail } from 'lucide-react';
           rel="noopener noreferrer"
           class="inline-flex items-center justify-center px-6 py-3 bg-red-500 hover:bg-red-600 text-white rounded-lg font-semibold transition-all duration-300 hover:shadow-lg active:scale-95"
         >
-          Donar Ahora
+          {t.footer.donarBoton}
         </a>
       </div>
 
       <!-- Contact -->
       <div>
-        <h3 class="text-primary-300 font-heading font-bold text-lg mb-4">Contacto</h3>
+        <h3 class="text-primary-300 font-heading font-bold text-lg mb-4">{t.footer.contactoTitle}</h3>
         <div class="space-y-3 text-sm mb-6">
           <a href="mailto:info@ungrano.org" class="flex items-center gap-2 hover:text-primary-300 transition-colors">
             <Mail className="w-4 h-4" />
@@ -50,7 +59,7 @@ import { Facebook, Twitter, Youtube, Instagram, Mail } from 'lucide-react';
           </a>
         </div>
         
-        <h4 class="text-primary-300 font-semibold mb-3">Síguenos</h4>
+        <h4 class="text-primary-300 font-semibold mb-3">{t.footer.siguenos}</h4>
         <div class="flex gap-4">
           <a href="https://facebook.com/ungrano" target="_blank" rel="noopener noreferrer" 
              class="hover:text-secondary-300 transition-colors" aria-label="Facebook">
@@ -74,12 +83,10 @@ import { Facebook, Twitter, Youtube, Instagram, Mail } from 'lucide-react';
 
     <!-- Bottom Bar -->
     <div class="border-t border-brown-400 pt-8 text-center text-sm">
-      <p class="text-gray-100">&copy; {new Date().getFullYear()} Un Grano de Arena. Todos los derechos reservados.</p>
+      <p class="text-gray-100">&copy; {new Date().getFullYear()} Un Grano de Arena. {t.footer.derechos}</p>
       <p class="mt-2 text-primary-200 font-semibold">
-        Juntos podemos construir la paz positiva.
+        {t.footer.mensaje}
       </p>
     </div>
   </div>
 </footer>
-
-

@@ -1,0 +1,49 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Hero from '../../components/Hero.astro';
+import QuienesSomos from '../../components/QuienesSomos.astro';
+import VisionMision from '../../components/VisionMision.astro';
+import FundadoraHome from '../../components/FundadoraHome.astro';
+import ProgramasHome from '../../components/ProgramasHome.astro';
+import TeamHome from '../../components/TeamHome.astro';
+import CTADonacion from '../../components/CTADonacion.astro';
+import Footer from '../../components/Footer.astro';
+import { getTranslations } from '../../i18n';
+
+const lang = 'en';
+const t = getTranslations(lang);
+---
+
+<Layout 
+  title={t.site.title}
+  description={t.site.description}
+  lang={lang}
+>
+  <Header lang={lang} />
+  
+  <main>
+    <div id="inicio">
+      <Hero lang={lang} />
+    </div>
+
+    <div id="nosotros">
+      <QuienesSomos lang={lang} />
+      <VisionMision lang={lang} />
+      <FundadoraHome lang={lang} />
+    </div>
+
+    <div id="programas">
+      <ProgramasHome lang={lang} />
+    </div>
+
+    <div id="equipo">
+      <TeamHome lang={lang} />
+    </div>
+    
+    <CTADonacion lang={lang} />
+  </main>
+
+  <Footer lang={lang} />
+</Layout>
+

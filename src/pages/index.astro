@@ -6,42 +6,43 @@ import QuienesSomos from '../components/QuienesSomos.astro';
 import VisionMision from '../components/VisionMision.astro';
 import FundadoraHome from '../components/FundadoraHome.astro';
 import ProgramasHome from '../components/ProgramasHome.astro';
-// import AliadosHome from '../components/AliadosHome.astro';
 import TeamHome from '../components/TeamHome.astro';
-import Testimonial from '../components/Testimonial.astro';
 import CTADonacion from '../components/CTADonacion.astro';
 import Footer from '../components/Footer.astro';
+import { getTranslations } from '../i18n';
+
+const lang = 'es';
+const t = getTranslations(lang);
 ---
 
 <Layout 
-  title="Un Grano de Arena - Juntos Florecemos"
-  description="Un Grano de Arena es una organización sin fines de lucro que acompaña en su proceso de florecimiento humano a las personas en situación de vulnerabilidad."
+  title={t.site.title}
+  description={t.site.description}
+  lang={lang}
 >
-  <Header />
+  <Header lang={lang} />
   
   <main>
     <div id="inicio">
-      <Hero />
+      <Hero lang={lang} />
     </div>
 
     <div id="nosotros">
-      <QuienesSomos />
-      <VisionMision />
-      <FundadoraHome />
+      <QuienesSomos lang={lang} />
+      <VisionMision lang={lang} />
+      <FundadoraHome lang={lang} />
     </div>
 
     <div id="programas">
-      <ProgramasHome />
+      <ProgramasHome lang={lang} />
     </div>
 
     <div id="equipo">
-      <TeamHome />
+      <TeamHome lang={lang} />
     </div>
-
-    <!-- <Testimonial /> -->
     
-    <CTADonacion />
+    <CTADonacion lang={lang} />
   </main>
 
-  <Footer />
+  <Footer lang={lang} />
 </Layout>

@@ -1,11 +1,20 @@
 ---
 import Section from './Section.astro';
 import { Eye, Target, Heart } from 'lucide-react';
+import type { Language } from '../i18n';
+import { getTranslations } from '../i18n';
+
+interface Props {
+  lang?: Language;
+}
+
+const { lang = 'es' } = Astro.props;
+const t = getTranslations(lang);
 ---
 
 <Section class="bg-primary-200">
   <div class="text-center mb-12">
-    <h2 class="text-brown-900 mb-4">Nuestra Visión y Misión</h2>
+    <h2 class="text-brown-900 mb-4">{t.visionMision.title}</h2>
     <div class="w-20 h-1 bg-brown-800 mx-auto rounded-full"></div>
   </div>
 
@@ -14,16 +23,16 @@ import { Eye, Target, Heart } from 'lucide-react';
     <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border-2 border-primary-300">
       <div class="flex items-center gap-3 mb-4">
         <div class="w-12 h-12 bg-primary-200 rounded-full flex items-center justify-center">
-          <Eye class="w-6 h-6 text-primary-600" />
+          <Eye className="w-6 h-6 text-primary-600" />
         </div>
-        <h3 class="text-2xl font-heading font-bold text-primary-600">Visión</h3>
+        <h3 class="text-2xl font-heading font-bold text-primary-600">{t.visionMision.visionTitle}</h3>
       </div>
       <p class="text-brown-900 leading-relaxed">
-        Nuestra visión es acorde con un mundo inclusivo, donde cada persona pueda desarrollarse en igualdad y dignidad, donde la diversidad sea un valor agregado, y donde juntos podamos aprender a respetar la naturaleza y la Madre Tierra.
+        {t.visionMision.visionDescription}
       </p>
       <div class="mt-6 p-4 bg-primary-50 rounded-lg border-l-4 border-brown-700">
         <p class="text-sm text-brown-900">
-          Nos guiamos por la Agenda 2030 y los 17 objetivos de desarrollo sostenible, así como por la Declaración Universal de los Derechos Humanos.
+          {t.visionMision.visionNote}
         </p>
       </div>
     </div>
@@ -32,12 +41,12 @@ import { Eye, Target, Heart } from 'lucide-react';
     <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border-2 border-secondary-300">
       <div class="flex items-center gap-3 mb-4">
         <div class="w-12 h-12 bg-secondary-200 rounded-full flex items-center justify-center">
-          <Target class="w-6 h-6 text-secondary-700" />
+          <Target className="w-6 h-6 text-secondary-700" />
         </div>
-        <h3 class="text-2xl font-heading font-bold text-secondary-700">Misión</h3>
+        <h3 class="text-2xl font-heading font-bold text-secondary-700">{t.visionMision.misionTitle}</h3>
       </div>
       <p class="text-brown-900 leading-relaxed mb-6">
-        Nuestra misión es la de ser agentes de cambio promoviendo el empoderamiento comunitario, rescatando saberes y potencialidades, despertando un sentimiento de responsabilidad común para la dinamización del cambio social.
+        {t.visionMision.misionDescription}
       </p>
     </div>
   </div>
@@ -46,37 +55,35 @@ import { Eye, Target, Heart } from 'lucide-react';
   <div class="bg-white rounded-2xl p-8 shadow-lg border-2 border-accent-300">
     <div class="flex items-center gap-3 mb-6 justify-center">
       <div class="w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center">
-        <Heart class="w-6 h-6 text-accent-600" />
+        <Heart className="w-6 h-6 text-accent-600" />
       </div>
-      <h3 class="text-2xl font-heading font-bold text-accent-600">Nuestros Pilares</h3>
+      <h3 class="text-2xl font-heading font-bold text-accent-600">{t.visionMision.pilaresTitle}</h3>
     </div>
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
       <div class="text-center p-4 bg-gradient-to-br from-primary-100 to-primary-50 rounded-lg">
         <div class="w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center mx-auto mb-3 shadow-md">
           <span class="text-2xl">📚</span>
         </div>
-        <p class="font-semibold text-brown-800">Programas educativos transversales</p>
+        <p class="font-semibold text-brown-800">{t.visionMision.pilar1}</p>
       </div>
       <div class="text-center p-4 bg-gradient-to-br from-secondary-100 to-secondary-50 rounded-lg">
         <div class="w-16 h-16 bg-secondary-400 rounded-full flex items-center justify-center mx-auto mb-3 shadow-md">
           <span class="text-2xl">😁</span>
         </div>
-        <p class="font-semibold text-brown-800">Prevención de salud bucal</p>
+        <p class="font-semibold text-brown-800">{t.visionMision.pilar2}</p>
       </div>
       <div class="text-center p-4 bg-gradient-to-br from-accent-100 to-accent-50 rounded-lg">
         <div class="w-16 h-16 bg-accent-500 rounded-full flex items-center justify-center mx-auto mb-3 shadow-md">
           <span class="text-2xl">⚖️</span>
         </div>
-        <p class="font-semibold text-brown-800">Promoción de igualdad de género</p>
+        <p class="font-semibold text-brown-800">{t.visionMision.pilar3}</p>
       </div>
       <div class="text-center p-4 bg-gradient-to-br from-red-100 to-red-50 rounded-lg">
         <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-3 shadow-md">
           <span class="text-2xl">🥗</span>
         </div>
-        <p class="font-semibold text-brown-800">Alimentación saludable</p>
+        <p class="font-semibold text-brown-800">{t.visionMision.pilar4}</p>
       </div>
     </div>
   </div>
 </Section>
-
-
