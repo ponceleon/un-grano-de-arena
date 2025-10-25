@@ -166,7 +166,7 @@ Antes de hacer el deploy final:
 
 ### Assets
 - [ ] Optimizar todas las imágenes
-- [ ] Agregar favicon.svg
+- [ ] Agregar favicon.ico
 - [ ] Agregar og-image.jpg para redes sociales
 
 ---

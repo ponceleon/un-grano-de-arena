@@ -19,7 +19,7 @@ Sitio web oficial de la fundación **Un Grano de Arena**, una organización sin 
 │   │   ├── team/          # Fotos del equipo
 │   │   ├── aliados/       # Logos de aliados
 │   │   └── programas/     # Imágenes de programas
-│   └── favicon.svg
+│   └── favicon.ico
 ├── src/
 │   ├── components/        # Componentes reutilizables
 │   ├── data/             # Datos (equipo, aliados, programas)

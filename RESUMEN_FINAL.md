@@ -98,7 +98,7 @@ un-grano-de-arena/
 │   │   ├── team/
 │   │   ├── aliados/
 │   │   └── programas/
-│   ├── favicon.svg
+│   ├── favicon.ico
 │   └── robots.txt
 │
 ├── src/

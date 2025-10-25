@@ -7,41 +7,31 @@ export interface TeamMember {
 
 export const teamMembers: TeamMember[] = [
   {
-    name: "María Elena Hernández",
-    role: "Fundadora",
-    image: "/images/team/maria-elena.jpg",
-    bio: "",
-  },
-  {
-    name: "Nathalia Amortegui",
-    role: "Coordinadora",
-    image: "/images/team/nathalia.jpg",
+    name: "Mareli Aguirre",
+    role: "Coordinadora Venezuela",
+    image: "/images/team/mareli.png",
     bio: "",
   },
   {
     name: "Maritza Blanco",
-    role: "Miembro del Equipo",
-    image: "/images/team/maritza.jpg",
+    role: "Directora Granos sobre ruedas",
+    image: "/images/team/maritza.png",
     bio: "",
   },
   {
-    name: "Mareli Aguirre",
-    role: "Miembro del Equipo",
-    image: "/images/team/mareli.jpg",
+    name: "María Elena Hernández",
+    role: "Directora Granos de Sabor",
+    image: "/images/team/maria_elena_hernandez.png",
     bio: "",
   },
   {
-    name: "Glendys Pérez",
-    role: "Miembro del Equipo",
-    image: "/images/team/glendys.jpg",
+    name: "Nathalia Amortegui",
+    role: "Coordinadora Tampa",
+    image: "/images/team/nathalia.png",  
     bio: "",
   },
-  {
-    name: "Monserrat del Valle",
-    role: "Coordinadora Juvenil",
-    image: "/images/team/monserrat.jpg",
-    bio: "Los jóvenes tenemos mucho que aportar, este es el momento de hacerlo",
-  },
+  
+
 ];
 
 
