@@ -58,6 +58,33 @@ export const en: Translation = {
     ctaDonar: "Make your donation now",
   },
 
+  // Gallery images - Why Donate
+  whyDonateGallery: {
+    option1: {
+      alimentosAlt: "Hot meals being served to families affected by the earthquake in Venezuela",
+      refugioAlt: "Temporary shelter for families who lost their homes in the earthquake",
+      aguaSaludAlt: "Volunteers delivering water filters and medical care in the disaster zone",
+    },
+    option2: {
+      alimentosAlt: "Food distribution to communities affected by the earthquake",
+      refugioAlt: "Temporary shelter structure set up for those affected",
+      aguaSaludAlt: "Emergency medical post treating earthquake injured",
+    },
+    option3: {
+      gallery1Alt: "Collapsed buildings in Caracas after the earthquake of June 24, 2026",
+      gallery2Alt: "Rescue teams searching for survivors among the rubble",
+      gallery3Alt: "Venezuelan family receiving humanitarian assistance",
+      gallery4Alt: "Volunteers distributing clean water in affected area",
+      gallery5Alt: "Rescue workers conducting search and recovery operations",
+      gallery6Alt: "Community united in cleanup and recovery efforts",
+    },
+    option4: {
+      alimentosAlt: "Hot meal being delivered to an affected family",
+      refugioAlt: "Tents and temporary shelters for displaced persons",
+      aguaSaludAlt: "Volunteer doctors treating patients in the field",
+    },
+  },
+
   // Who We Are
   quienesSomos: {
     title: "Who We Are?",

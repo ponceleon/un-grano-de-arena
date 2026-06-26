@@ -56,6 +56,33 @@ export const es = {
     ctaDonar: "Haz tu donación ahora",
   },
 
+  // Galería de imágenes - Por qué donar
+  whyDonateGallery: {
+    option1: {
+      alimentosAlt: "Comida caliente siendo servida a familias afectadas por el terremoto en Venezuela",
+      refugioAlt: "Albergue temporal para familias que perdieron sus hogares en el terremoto",
+      aguaSaludAlt: "Voluntarios entregando filtros de agua y atención médica en zona de desastre",
+    },
+    option2: {
+      alimentosAlt: "Distribución de alimentos a comunidades afectadas por el terremoto",
+      refugioAlt: "Estructura de refugio temporal instalada para damnificados",
+      aguaSaludAlt: "Puesto médico de emergencia atendiendo a heridos del terremoto",
+    },
+    option3: {
+      gallery1Alt: "Edificios colapsados en Caracas tras el terremoto del 24 de junio de 2026",
+      gallery2Alt: "Equipos de rescate buscando sobrevivientes entre los escombros",
+      gallery3Alt: "Familia venezolana recibiendo asistencia humanitaria",
+      gallery4Alt: "Voluntarios distribuyendo agua potable en zona afectada",
+      gallery5Alt: "Rescatistas trabajando en labores de búsqueda y salvamento",
+      gallery6Alt: "Comunidad unida en labores de limpieza y recuperación",
+    },
+    option4: {
+      alimentosAlt: "Plato de comida caliente siendo entregado a una familia damnificada",
+      refugioAlt: "Tiendas de campaña y albergues temporales para desplazados",
+      aguaSaludAlt: "Médicos voluntarios atendiendo a pacientes en terreno",
+    },
+  },
+
   // Quiénes Somos
   quienesSomos: {
     title: "¿Quiénes Somos?",
