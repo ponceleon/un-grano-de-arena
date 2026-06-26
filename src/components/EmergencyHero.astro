@@ -1,0 +1,44 @@
+---
+import type { Language } from '../i18n';
+import { getTranslations } from '../i18n';
+import DonationWidget from './DonationWidget';
+
+interface Props {
+  lang?: Language;
+}
+
+const { lang = 'es' } = Astro.props;
+const t = getTranslations(lang);
+---
+
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-brown-900 via-brown-800 to-brown-900">
+  <div class="absolute inset-0 z-0">
+    <div class="absolute inset-0 bg-gradient-to-b from-red-900/20 via-transparent to-brown-900/50"></div>
+  </div>
+
+  <div class="relative z-10 container-custom px-4 py-16 md:py-24">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="text-white">
+        <div class="inline-block bg-red-500/90 text-white text-sm font-bold px-4 py-2 rounded-full mb-6 uppercase tracking-wider">
+          🆘 {lang === 'es' ? 'EMERGENCIA' : 'EMERGENCY'}
+        </div>
+        <h1 class="font-heading font-bold text-4xl md:text-5xl lg:text-6xl mb-6 text-primary-300 leading-tight">
+          {t.emergency.title}
+        </h1>
+        <p class="text-xl md:text-2xl mb-4 text-primary-100 font-heading font-medium">
+          {t.emergency.subtitle}
+        </p>
+        <p class="text-base md:text-lg text-gray-200 mb-8 leading-relaxed max-w-xl">
+          {t.emergency.description}
+        </p>
+      </div>
+
+      <div class="lg:pl-4">
+        <DonationWidget
+          client:load
+          lang={lang}
+        />
+      </div>
+    </div>
+  </div>
+</section>

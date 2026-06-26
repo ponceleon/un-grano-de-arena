@@ -26,6 +26,38 @@ export const en: Translation = {
     ctaDonacion: "Make a Donation",
   },
 
+  // Emergency
+  emergency: {
+    title: "Venezuela Emergency: Earthquake",
+    subtitle: "Your help today is a roof, a warm meal, a helping hand",
+    description: "Venezuela is going through an emergency that breaks our hearts. Families affected by the earthquake need urgent help: food, shelter, water, medical aid, and essential supplies. At Un Grano de Arena, we are mobilizing all our resources to bring direct assistance to those who need it most. We work with trusted partners on the ground to ensure every donation reaches where it's needed.",
+    ctaDonar: "Donate Now",
+  },
+
+  // Donation Widget
+  widget: {
+    selectMethod: "Lo que puedas aportar ayuda, todo acto suma.", 
+    paypal: "PayPal",
+    zelle: "Zelle (Transfer)",
+    paypalDescription: "Pay securely with your card or PayPal account",
+    zelleDescription: "Scan the QR code or transfer directly",
+    amount: "Amount",
+    other: "Other",
+    donateButton: "Donate Now",
+    feeCovering: "I'd like to add 2.9% + $0.30 to cover transaction fees",
+    zelleInstructions: "1. Open your Zelle app\n2. Scan the QR code\n3. Enter the amount\n4. Confirm the transfer",
+  },
+
+  // Why Donate
+  whyDonate: {
+    title: "Why Donate?",
+    subtitle: "Your grain of sand today makes a difference",
+    paragraph1: "Every donation, no matter the size, becomes direct aid for families who have lost everything. A hot meal, a water filter, temporary shelter, emergency medical care.",
+    paragraph2: "Venezuela needs all of us. In times of crisis, solidarity is the bridge that connects us as humanity. It doesn't matter how much you can give; what matters is that you give.",
+    oneHundred: "100% of funds raised for this emergency will go directly to helping families in Venezuela.",
+    ctaDonar: "Make your donation now",
+  },
+
   // Who We Are
   quienesSomos: {
     title: "Who We Are?",
@@ -196,6 +228,7 @@ export const en: Translation = {
     donacionTitle: "Support Our Work",
     donacionDescription: "Your donation allows us to continue accompanying people in vulnerable situations.",
     donarBoton: "Donate Now",
+    sitioCompleto: "View full site",
     contactoTitle: "Contact",
     siguenos: "Follow Us",
     derechos: "All rights reserved.",

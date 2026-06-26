@@ -24,6 +24,38 @@ export const es = {
     ctaDonacion: "Haz una Donación",
   },
 
+  // Emergencia
+  emergency: {
+    title: "Emergencia Venezuela: Terremoto",
+    subtitle: "Tu ayuda hoy es un techo, un plato de comida, una mano amiga",
+    description: "Venezuela está viviendo una emergencia que nos duele a todos. Las familias afectadas por el terremoto necesitan ayuda urgente: alimentos, refugio, agua, atención médica y artículos de primera necesidad. En Un Grano de Arena estamos movilizando todos nuestros recursos para llevar asistencia directa a quienes más lo necesitan. Trabajamos con aliados de confianza en el terreno para que cada ayuda llegue a donde tiene que llegar.",
+    ctaDonar: "Donar Ahora",
+  },
+
+  // Widget de Donación
+  widget: {
+    selectMethod: "Selecciona tu método de pago",
+    paypal: "PayPal",
+    zelle: "Zelle (Transferencia)",
+    paypalDescription: "Paga con tu tarjeta o cuenta de PayPal de forma segura",
+    zelleDescription: "Escanea el código QR o transfiere directamente",
+    amount: "Monto",
+    other: "Otro",
+    donateButton: "Donar Ahora",
+    feeCovering: "Añadir 2.9% + $0.30 para cubrir comisiones de transacción",
+    zelleInstructions: "1. Abre tu app de Zelle\n2. Escanea el código QR\n3. Ingresa el monto\n4. Confirma la transferencia",
+  },
+
+  // Por qué donar
+  whyDonate: {
+    title: "¿Por qué donar?",
+    subtitle: "Tu grano de arena hoy marca la diferencia",
+    paragraph1: "Cada donación, sin importar su tamaño, se convierte en ayuda directa para las familias que han perdido todo. Un plato de comida caliente, un filtro de agua, un techo temporal, atención médica de emergencia.",
+    paragraph2: "Venezuela necesita de todos nosotros. En momentos de crisis, la solidaridad es el puente que nos conecta como humanidad. No importa cuánto puedas dar; lo que importa es que des.",
+    oneHundred: "100% de los fondos recaudados para esta emergencia se destinarán directamente a ayudar a familias en Venezuela.",
+    ctaDonar: "Haz tu donación ahora",
+  },
+
   // Quiénes Somos
   quienesSomos: {
     title: "¿Quiénes Somos?",
@@ -194,6 +226,7 @@ export const es = {
     donacionTitle: "Apoya Nuestro Trabajo",
     donacionDescription: "Tu donación nos permite seguir acompañando a personas en situación de vulnerabilidad.",
     donarBoton: "Donar Ahora",
+    sitioCompleto: "Ver sitio completo",
     contactoTitle: "Contacto",
     siguenos: "Síguenos",
     derechos: "Todos los derechos reservados.",

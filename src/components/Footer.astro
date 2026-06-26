@@ -1,7 +1,7 @@
 ---
 import { Facebook, Twitter, Youtube, Instagram, Mail } from 'lucide-react';
 import type { Language } from '../i18n';
-import { getTranslations } from '../i18n';
+import { getTranslations, getLocalizedPath } from '../i18n';
 
 interface Props {
   lang?: Language;
@@ -26,10 +26,8 @@ const t = getTranslations(lang);
       <div>
         <h3 class="text-primary-300 font-heading font-bold text-lg mb-4">{t.footer.linksTitle}</h3>
         <ul class="space-y-2 text-sm">
-          <li><a href="#inicio" class="hover:text-primary-300 transition-colors">{t.nav.inicio}</a></li>
-          <li><a href="#nosotros" class="hover:text-primary-300 transition-colors">{t.nav.sobreNosotros}</a></li>
-          <li><a href="#programas" class="hover:text-primary-300 transition-colors">{t.nav.nuestrosProgramas}</a></li>
-          <li><a href="#equipo" class="hover:text-primary-300 transition-colors">{t.nav.nuestroEquipo}</a></li>
+          <li><a href={getLocalizedPath('/', lang)} class="hover:text-primary-300 transition-colors">{t.nav.inicio}</a></li>
+          <li><a href={getLocalizedPath('/nosotros/', lang)} target="_blank" rel="noopener noreferrer" class="hover:text-primary-300 transition-colors">{t.footer.sitioCompleto}</a></li>
         </ul>
       </div>
 
