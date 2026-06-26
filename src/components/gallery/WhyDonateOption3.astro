@@ -1,6 +1,8 @@
 ---
 import type { Language } from '../../i18n';
 import { getTranslations } from '../../i18n';
+import GalleryWithLightbox from './GalleryWithLightbox';
+import type { GallerySlide } from '../../types/gallery';
 
 interface Props {
   lang?: Language;
@@ -8,6 +10,69 @@ interface Props {
 
 const { lang = 'es' } = Astro.props;
 const t = getTranslations(lang);
+
+const slides: GallerySlide[] = [
+  {
+    id: 'gallery-1',
+    type: 'image',
+    src: '/images/why-donate/gallery-1.jpg',
+    title: t.whyDonateGallery.lightbox.slide1Title,
+    description: t.whyDonateGallery.lightbox.slide1Desc,
+    alt: t.whyDonateGallery.option3.gallery1Alt,
+    likes: 42,
+    shares: 12,
+  },
+  {
+    id: 'gallery-2',
+    type: 'image',
+    src: '/images/why-donate/gallery-2.jpg',
+    title: t.whyDonateGallery.lightbox.slide2Title,
+    description: t.whyDonateGallery.lightbox.slide2Desc,
+    alt: t.whyDonateGallery.option3.gallery2Alt,
+    likes: 38,
+    shares: 8,
+  },
+  {
+    id: 'gallery-3',
+    type: 'image',
+    src: '/images/why-donate/gallery-3.jpg',
+    title: t.whyDonateGallery.lightbox.slide3Title,
+    description: t.whyDonateGallery.lightbox.slide3Desc,
+    alt: t.whyDonateGallery.option3.gallery3Alt,
+    likes: 55,
+    shares: 15,
+  },
+  {
+    id: 'gallery-4',
+    type: 'image',
+    src: '/images/why-donate/gallery-4.jpg',
+    title: t.whyDonateGallery.lightbox.slide4Title,
+    description: t.whyDonateGallery.lightbox.slide4Desc,
+    alt: t.whyDonateGallery.option3.gallery4Alt,
+    likes: 31,
+    shares: 7,
+  },
+  {
+    id: 'gallery-5',
+    type: 'image',
+    src: '/images/why-donate/gallery-5.jpg',
+    title: t.whyDonateGallery.lightbox.slide5Title,
+    description: t.whyDonateGallery.lightbox.slide5Desc,
+    alt: t.whyDonateGallery.option3.gallery5Alt,
+    likes: 47,
+    shares: 10,
+  },
+  {
+    id: 'gallery-6',
+    type: 'image',
+    src: '/images/why-donate/gallery-6.jpg',
+    title: t.whyDonateGallery.lightbox.slide6Title,
+    description: t.whyDonateGallery.lightbox.slide6Desc,
+    alt: t.whyDonateGallery.option3.gallery6Alt,
+    likes: 63,
+    shares: 20,
+  },
+];
 ---
 
 <section class="py-20 md:py-28 bg-white">
@@ -50,63 +115,8 @@ const t = getTranslations(lang);
         </div>
       </div>
 
-      <div class="overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none -mx-4 px-4 md:mx-0 md:px-0 mb-12">
-        <div class="grid grid-cols-[repeat(6,70vw)] md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-4 snap-proximity">
-          <div class="snap-start md:snap-none">
-            <img
-              src="/images/why-donate/gallery-1.jpg"
-              alt={t.whyDonateGallery.option3.gallery1Alt}
-              class="aspect-video rounded-xl object-cover w-full hover:scale-105 hover:shadow-lg transition-all duration-300"
-              loading="lazy"
-              style="background-color: #e5e7eb;"
-            />
-          </div>
-          <div class="snap-start md:snap-none">
-            <img
-              src="/images/why-donate/gallery-2.jpg"
-              alt={t.whyDonateGallery.option3.gallery2Alt}
-              class="aspect-video rounded-xl object-cover w-full hover:scale-105 hover:shadow-lg transition-all duration-300"
-              loading="lazy"
-              style="background-color: #d1d5db;"
-            />
-          </div>
-          <div class="snap-start md:snap-none">
-            <img
-              src="/images/why-donate/gallery-3.jpg"
-              alt={t.whyDonateGallery.option3.gallery3Alt}
-              class="aspect-video rounded-xl object-cover w-full hover:scale-105 hover:shadow-lg transition-all duration-300"
-              loading="lazy"
-              style="background-color: #e5e7eb;"
-            />
-          </div>
-          <div class="snap-start md:snap-none">
-            <img
-              src="/images/why-donate/gallery-4.jpg"
-              alt={t.whyDonateGallery.option3.gallery4Alt}
-              class="aspect-video rounded-xl object-cover w-full hover:scale-105 hover:shadow-lg transition-all duration-300"
-              loading="lazy"
-              style="background-color: #d1d5db;"
-            />
-          </div>
-          <div class="snap-start md:snap-none">
-            <img
-              src="/images/why-donate/gallery-5.jpg"
-              alt={t.whyDonateGallery.option3.gallery5Alt}
-              class="aspect-video rounded-xl object-cover w-full hover:scale-105 hover:shadow-lg transition-all duration-300"
-              loading="lazy"
-              style="background-color: #e5e7eb;"
-            />
-          </div>
-          <div class="snap-start md:snap-none">
-            <img
-              src="/images/why-donate/gallery-6.jpg"
-              alt={t.whyDonateGallery.option3.gallery6Alt}
-              class="aspect-video rounded-xl object-cover w-full hover:scale-105 hover:shadow-lg transition-all duration-300"
-              loading="lazy"
-              style="background-color: #d1d5db;"
-            />
-          </div>
-        </div>
+      <div class="mb-12">
+        <GalleryWithLightbox slides={slides} client:load />
       </div>
 
       <p class="text-lg md:text-xl text-gray-600 leading-relaxed mb-6 max-w-3xl mx-auto">

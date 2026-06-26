@@ -60,6 +60,20 @@ export const en: Translation = {
 
   // Gallery images - Why Donate
   whyDonateGallery: {
+    lightbox: {
+      slide1Title: "Collapsed buildings in Caracas",
+      slide1Desc: "The June 24 earthquake left thousands of buildings destroyed across the capital",
+      slide2Title: "Rescue teams in action",
+      slide2Desc: "Rescue brigades work tirelessly searching for survivors among the rubble",
+      slide3Title: "Humanitarian assistance",
+      slide3Desc: "Venezuelan families receive food, water, and medical care thanks to your donation",
+      slide4Title: "Clean water distribution",
+      slide4Desc: "Volunteers bring clean water to the communities most affected by the disaster",
+      slide5Title: "Search and rescue operations",
+      slide5Desc: "Rescuers from different organizations join forces in the most devastated areas",
+      slide6Title: "Community united",
+      slide6Desc: "Neighbors and volunteers work together in cleanup and recovery efforts",
+    },
     option1: {
       alimentosAlt: "Hot meals being served to families affected by the earthquake in Venezuela",
       refugioAlt: "Temporary shelter for families who lost their homes in the earthquake",

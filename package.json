@@ -10,7 +10,10 @@
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.6.0",
-    "astro": "^5.14.4"
+    "astro": "^5.14.4",
+    "embla-carousel": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
+    "embla-carousel-wheel-gestures": "^8.1.0"
   },
   "devDependencies": {
     "@astrojs/react": "^4.4.0",

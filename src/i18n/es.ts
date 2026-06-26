@@ -58,6 +58,20 @@ export const es = {
 
   // Galería de imágenes - Por qué donar
   whyDonateGallery: {
+    lightbox: {
+      slide1Title: "Edificios colapsados en Caracas",
+      slide1Desc: "El terremoto del 24 de junio dejó miles de edificaciones destruidas en toda la capital",
+      slide2Title: "Equipos de rescate en acción",
+      slide2Desc: "Brigadas de rescate trabajan incansablemente buscando sobrevivientes entre los escombros",
+      slide3Title: "Asistencia humanitaria",
+      slide3Desc: "Familias venezolanas reciben alimentos, agua y atención médica gracias a tu donación",
+      slide4Title: "Distribución de agua potable",
+      slide4Desc: "Voluntarios llevan agua limpia a las comunidades más afectadas por el desastre",
+      slide5Title: "Labores de búsqueda y rescate",
+      slide5Desc: "Rescatistas de diferentes organizaciones unen fuerzas en las zonas más devastadas",
+      slide6Title: "Comunidad unida",
+      slide6Desc: "Vecinos y voluntarios trabajan juntos en labores de limpieza y recuperación",
+    },
     option1: {
       alimentosAlt: "Comida caliente siendo servida a familias afectadas por el terremoto en Venezuela",
       refugioAlt: "Albergue temporal para familias que perdieron sus hogares en el terremoto",
