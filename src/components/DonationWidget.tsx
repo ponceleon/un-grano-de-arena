@@ -174,17 +174,19 @@ export default function DonationWidget({
         {paymentMethod === 'zelle' && (
           <div class="text-center">
             <div class="bg-white rounded-xl p-4 mb-4 inline-block border-2 border-dashed border-gray-200">
+              <p class="text-sm font-bold text-brown-700 mb-2">UN GRANO DE ARENA USA CORP</p>
+              <p class="text-xs text-gray-500 mb-3">ugda-usa</p>
               <img
                 src="/images/qr-zelle.jpg"
                 alt="Zelle QR Code"
-                class="w-48 h-48 mx-auto object-contain"
+                class="w-40 h-40 mx-auto object-contain"
                 onError={(e) => {
                   const target = e.currentTarget;
                   target.style.display = 'none';
                   const parent = target.parentElement;
                   if (parent) {
                     const placeholder = document.createElement('div');
-                    placeholder.className = 'w-48 h-48 mx-auto bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 text-sm font-medium';
+                    placeholder.className = 'w-40 h-40 mx-auto bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 text-sm font-medium';
                     placeholder.textContent = 'QR Code';
                     parent.appendChild(placeholder);
                   }
