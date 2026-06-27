@@ -38,7 +38,7 @@ export default function DonationWidget({
   };
 
   const getPaypalUrl = (): string => {
-    const amount = Math.round(getTotalAmount() * 100);
+    const amount = getTotalAmount().toFixed(2);
     return `https://www.paypal.com/paypalme/ungrano/${amount}`;
   };
 
