@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import EmergencyHero from '../../components/EmergencyHero.astro';
-import WhyDonate from '../../components/WhyDonate.astro';
+import WhyDonateOption3 from '../../components/gallery/WhyDonateOption3.astro';
 import Footer from '../../components/Footer.astro';
 import ModalOverlay from '../../components/ModalOverlay';
 import { getTranslations } from '../../i18n';
@@ -20,7 +20,7 @@ const t = getTranslations(lang);
   
   <main id="main-content">
     <EmergencyHero lang={lang} />
-    <WhyDonate lang={lang} />
+    <WhyDonateOption3 lang={lang} />
   </main>
 
   <Footer lang={lang} />
