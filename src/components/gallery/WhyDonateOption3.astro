@@ -78,6 +78,10 @@ const slides: GallerySlide[] = [
 <section class="py-20 md:py-28 bg-white">
   <div class="container-custom px-4">
     <div class="max-w-4xl mx-auto text-center">
+      <div class="mb-12">
+        <GalleryWithLightbox slides={slides} client:load />
+      </div>
+
       <h2 class="font-heading font-bold text-3xl md:text-4xl lg:text-5xl text-brown-500 mb-4">
         {t.whyDonate.title}
       </h2>
@@ -113,10 +117,6 @@ const slides: GallerySlide[] = [
             {lang === 'es' ? 'Filtros de agua, atención médica y medicamentos' : 'Water filters, medical care and medicine'}
           </p>
         </div>
-      </div>
-
-      <div class="mb-12">
-        <GalleryWithLightbox slides={slides} client:load />
       </div>
 
       <p class="text-lg md:text-xl text-gray-600 leading-relaxed mb-6 max-w-3xl mx-auto">
