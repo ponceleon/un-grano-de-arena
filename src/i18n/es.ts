@@ -26,9 +26,9 @@ export const es = {
 
   // Emergencia
   emergency: {
-    title: "Emergencia Venezuela: Terremoto",
+    title: "Emergencia Colombia: Terremoto",
     subtitle: "Tu ayuda hoy es un techo, un plato de comida, una mano amiga",
-    description: "Venezuela está viviendo una emergencia que nos duele a todos. Las familias afectadas por el terremoto necesitan ayuda urgente: alimentos, refugio, agua, atención médica y artículos de primera necesidad. En Un Grano de Arena estamos movilizando todos nuestros recursos para llevar asistencia directa a quienes más lo necesitan. Trabajamos con aliados de confianza en el terreno para que cada ayuda llegue a donde tiene que llegar.",
+    description: "Colombia está viviendo una emergencia que nos duele a todos. Las familias afectadas por el terremoto necesitan ayuda urgente: alimentos, refugio, agua, atención médica y artículos de primera necesidad. En Un Grano de Arena estamos movilizando todos nuestros recursos para llevar asistencia directa a quienes más lo necesitan. Trabajamos con aliados de confianza en el terreno para que cada ayuda llegue a donde tiene que llegar.",
     ctaDonar: "Donar Ahora",
   },
 
@@ -51,20 +51,20 @@ export const es = {
     title: "¿Por qué donar?",
     subtitle: "Tu grano de arena hoy marca la diferencia",
     paragraph1: "Cada donación, sin importar su tamaño, se convierte en ayuda directa para las familias que han perdido todo. Un plato de comida caliente, un filtro de agua, un techo temporal, atención médica de emergencia.",
-    paragraph2: "Venezuela necesita de todos nosotros. En momentos de crisis, la solidaridad es el puente que nos conecta como humanidad. No importa cuánto puedas dar; lo que importa es que des.",
-    oneHundred: "100% de los fondos recaudados para esta emergencia se destinarán directamente a ayudar a familias en Venezuela.",
+    paragraph2: "Colombia necesita de todos nosotros. En momentos de crisis, la solidaridad es el puente que nos conecta como humanidad. No importa cuánto puedas dar; lo que importa es que des.",
+    oneHundred: "100% de los fondos recaudados para esta emergencia se destinarán directamente a ayudar a familias en Colombia.",
     ctaDonar: "Haz tu donación ahora",
   },
 
   // Galería de imágenes - Por qué donar
   whyDonateGallery: {
     lightbox: {
-      slide1Title: "Edificios colapsados en Caracas",
+      slide1Title: "Edificios colapsados",
       slide1Desc: "El terremoto del 24 de junio dejó miles de edificaciones destruidas en toda la capital",
       slide2Title: "Equipos de rescate en acción",
       slide2Desc: "Brigadas de rescate trabajan incansablemente buscando sobrevivientes entre los escombros",
       slide3Title: "Asistencia humanitaria",
-      slide3Desc: "Familias venezolanas reciben alimentos, agua y atención médica gracias a tu donación",
+      slide3Desc: "Familias colombianas reciben alimentos, agua y atención médica gracias a tu donación",
       slide4Title: "Distribución de agua potable",
       slide4Desc: "Voluntarios llevan agua limpia a las comunidades más afectadas por el desastre",
       slide5Title: "Labores de búsqueda y rescate",
@@ -73,7 +73,7 @@ export const es = {
       slide6Desc: "Vecinos y voluntarios trabajan juntos en labores de limpieza y recuperación",
     },
     option1: {
-      alimentosAlt: "Comida caliente siendo servida a familias afectadas por el terremoto en Venezuela",
+      alimentosAlt: "Comida caliente siendo servida a familias afectadas por el terremoto en Colombia",
       refugioAlt: "Albergue temporal para familias que perdieron sus hogares en el terremoto",
       aguaSaludAlt: "Voluntarios entregando filtros de agua y atención médica en zona de desastre",
     },
@@ -83,9 +83,9 @@ export const es = {
       aguaSaludAlt: "Puesto médico de emergencia atendiendo a heridos del terremoto",
     },
     option3: {
-      gallery1Alt: "Edificios colapsados en Caracas tras el terremoto del 24 de junio de 2026",
+      gallery1Alt: "Edificios colapsados tras el terremoto del 24 de junio de 2026",
       gallery2Alt: "Equipos de rescate buscando sobrevivientes entre los escombros",
-      gallery3Alt: "Familia venezolana recibiendo asistencia humanitaria",
+      gallery3Alt: "Familia colombiana recibiendo asistencia humanitaria",
       gallery4Alt: "Voluntarios distribuyendo agua potable en zona afectada",
       gallery5Alt: "Rescatistas trabajando en labores de búsqueda y salvamento",
       gallery6Alt: "Comunidad unida en labores de limpieza y recuperación",
@@ -146,7 +146,7 @@ export const es = {
       id: "granos-sobre-ruedas",
       title: "Granos sobre Ruedas",
       subtitle: "Bibliobús Móvil - El Principito",
-      description: "La lectura es una de las herramientas más poderosas para despertar la imaginación, la empatía y el pensamiento crítico en los niños y niñas. Nuestro bibliobús El Principito lleva cuentos, colores y conocimientos a los rincones de Venezuela donde más se necesitan, creando encuentros, despertando preguntas y transformando el acto de leer en una experiencia compartida.",
+      description: "La lectura es una de las herramientas más poderosas para despertar la imaginación, la empatía y el pensamiento crítico en los niños y niñas. Nuestro bibliobús El Principito lleva cuentos, colores y conocimientos a los rincones de Colombia donde más se necesitan, creando encuentros, despertando preguntas y transformando el acto de leer en una experiencia compartida.",
       slug: "granos-sobre-ruedas",
       icon: "book",
       image: "/images/programas/bibliobús.jpg",
@@ -195,7 +195,7 @@ export const es = {
     members: [
       {
         name: "Mareli Aguirre",
-        role: "Coordinadora Venezuela",
+        role: "Coordinadora Colombia",
         image: "/images/team/mareli.png",
         bio: "",
       },

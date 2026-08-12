@@ -13,7 +13,7 @@ export const programas: Programa[] = [
     id: "granos-sobre-ruedas",
     title: "Granos sobre Ruedas",
     subtitle: "Bibliobús Móvil - El Principito",
-    description: "La lectura es una de las herramientas más poderosas para despertar la imaginación, la empatía y el pensamiento crítico en los niños y niñas. Nuestro bibliobús El Principito lleva cuentos, colores y conocimientos a los rincones de Venezuela donde más se necesitan, creando encuentros, despertando preguntas y transformando el acto de leer en una experiencia compartida.",
+    description: "La lectura es una de las herramientas más poderosas para despertar la imaginación, la empatía y el pensamiento crítico en los niños y niñas. Nuestro bibliobús El Principito lleva cuentos, colores y conocimientos a los rincones de Colombia donde más se necesitan, creando encuentros, despertando preguntas y transformando el acto de leer en una experiencia compartida.",
     slug: "granos-sobre-ruedas",
     icon: "book",
     image: "/images/programas/bibliobús.jpg",

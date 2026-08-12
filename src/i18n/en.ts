@@ -28,9 +28,9 @@ export const en: Translation = {
 
   // Emergency
   emergency: {
-    title: "Venezuela Emergency: Earthquake",
+    title: "Colombia Emergency: Earthquake",
     subtitle: "Your help today is a roof, a warm meal, a helping hand",
-    description: "Venezuela is going through an emergency that breaks our hearts. Families affected by the earthquake need urgent help: food, shelter, water, medical aid, and essential supplies. At Un Grano de Arena, we are mobilizing all our resources to bring direct assistance to those who need it most. We work with trusted partners on the ground to ensure every donation reaches where it's needed.",
+    description: "Colombia is going through an emergency that breaks our hearts. Families affected by the earthquake need urgent help: food, shelter, water, medical aid, and essential supplies. At Un Grano de Arena, we are mobilizing all our resources to bring direct assistance to those who need it most. We work with trusted partners on the ground to ensure every donation reaches where it's needed.",
     ctaDonar: "Donate Now",
   },
 
@@ -53,20 +53,20 @@ export const en: Translation = {
     title: "Why Donate?",
     subtitle: "Your grain of sand today makes a difference",
     paragraph1: "Every donation, no matter the size, becomes direct aid for families who have lost everything. A hot meal, a water filter, temporary shelter, emergency medical care.",
-    paragraph2: "Venezuela needs all of us. In times of crisis, solidarity is the bridge that connects us as humanity. It doesn't matter how much you can give; what matters is that you give.",
-    oneHundred: "100% of funds raised for this emergency will go directly to helping families in Venezuela.",
+    paragraph2: "Colombia needs all of us. In times of crisis, solidarity is the bridge that connects us as humanity. It doesn't matter how much you can give; what matters is that you give.",
+    oneHundred: "100% of funds raised for this emergency will go directly to helping families in Colombia.",
     ctaDonar: "Make your donation now",
   },
 
   // Gallery images - Why Donate
   whyDonateGallery: {
     lightbox: {
-      slide1Title: "Collapsed buildings in Caracas",
+      slide1Title: "Collapsed buildings",
       slide1Desc: "The June 24 earthquake left thousands of buildings destroyed across the capital",
       slide2Title: "Rescue teams in action",
       slide2Desc: "Rescue brigades work tirelessly searching for survivors among the rubble",
       slide3Title: "Humanitarian assistance",
-      slide3Desc: "Venezuelan families receive food, water, and medical care thanks to your donation",
+      slide3Desc: "Colombian families receive food, water, and medical care thanks to your donation",
       slide4Title: "Clean water distribution",
       slide4Desc: "Volunteers bring clean water to the communities most affected by the disaster",
       slide5Title: "Search and rescue operations",
@@ -75,7 +75,7 @@ export const en: Translation = {
       slide6Desc: "Neighbors and volunteers work together in cleanup and recovery efforts",
     },
     option1: {
-      alimentosAlt: "Hot meals being served to families affected by the earthquake in Venezuela",
+      alimentosAlt: "Hot meals being served to families affected by the earthquake in Colombia",
       refugioAlt: "Temporary shelter for families who lost their homes in the earthquake",
       aguaSaludAlt: "Volunteers delivering water filters and medical care in the disaster zone",
     },
@@ -85,9 +85,9 @@ export const en: Translation = {
       aguaSaludAlt: "Emergency medical post treating earthquake injured",
     },
     option3: {
-      gallery1Alt: "Collapsed buildings in Caracas after the earthquake of June 24, 2026",
+      gallery1Alt: "Collapsed buildings after the earthquake of June 24, 2026",
       gallery2Alt: "Rescue teams searching for survivors among the rubble",
-      gallery3Alt: "Venezuelan family receiving humanitarian assistance",
+      gallery3Alt: "Colombian family receiving humanitarian assistance",
       gallery4Alt: "Volunteers distributing clean water in affected area",
       gallery5Alt: "Rescue workers conducting search and recovery operations",
       gallery6Alt: "Community united in cleanup and recovery efforts",
@@ -148,7 +148,7 @@ export const en: Translation = {
       id: "granos-sobre-ruedas",
       title: "Grains on Wheels",
       subtitle: "Mobile Bibliobus - The Little Prince",
-      description: "Reading is one of the most powerful tools to awaken imagination, empathy, and critical thinking in children. Our bibliobus The Little Prince brings stories, colors, and knowledge to the corners of Venezuela where they are most needed, creating encounters, awakening questions, and transforming the act of reading into a shared experience.",
+      description: "Reading is one of the most powerful tools to awaken imagination, empathy, and critical thinking in children. Our bibliobus The Little Prince brings stories, colors, and knowledge to the corners of Colombia where they are most needed, creating encounters, awakening questions, and transforming the act of reading into a shared experience.",
       slug: "granos-sobre-ruedas",
       icon: "book",
       image: "/images/programas/bibliobús.jpg",
@@ -197,7 +197,7 @@ export const en: Translation = {
     members: [
       {
         name: "Mareli Aguirre",
-        role: "Venezuela Coordinator",
+        role: "Colombia Coordinator",
         image: "/images/team/mareli.png",
         bio: "",
       },

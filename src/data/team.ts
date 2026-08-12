@@ -8,7 +8,7 @@ export interface TeamMember {
 export const teamMembers: TeamMember[] = [
   {
     name: "Mareli Aguirre",
-    role: "Coordinadora Venezuela",
+    role: "Coordinadora Colombia",
     image: "/images/team/mareli.png",
     bio: "",
   },
